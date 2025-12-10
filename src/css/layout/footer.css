@@ -3,16 +3,13 @@
    ========================================= */
 
 footer {
-    background-color: var(--marron-fonce); /* Fond marron foncé */
-    color: var(--beige-claire); /* Texte blanc/beige */
-    
+    background-color: var(--marron-fonce);
+    color: var(--beige-claire);
     padding: var(--space-3xl) var(--space-xl);
     margin-top: var(--space-4xl);
-    
-    text-align: left; /* Alignement GAUCHE demandé */
+    text-align: left;
 }
 
-/* Conteneur global */
 .footer__content {
     display: flex;
     flex-direction: column;
@@ -23,45 +20,45 @@ footer {
 
 /* Titre Principal "FESTICLOZE" */
 .footer__logo-text {
-    font-family: var(--font-titre); /* Playfair */
+    font-family: var(--font-titre);
     font-size: var(--autres-titres);
     color: var(--beige-claire);
     margin-bottom: var(--space-lg);
     text-transform: uppercase;
 }
 
-/* Titres de section (Menu, Contact, Nous suivre) */
+/* CORRECTION ICI : On cible "footer h3" directement.
+   Cela force la couleur beige, sinon ils restent marron sur marron (invisibles).
+*/
 footer h3 {
-    font-family: var(--font-corps); /* Montserrat */
-    font-weight: 400; /* Normal (pas gras selon consigne) */
+    font-family: var(--font-corps);
+    font-weight: 400; /* Normal (Pas gras) */
     font-size: var(--text-lg);
-    color: var(--beige-claire);
+    color: var(--beige-claire) !important; /* Force la couleur beige */
     margin-bottom: var(--space-md);
     margin-top: 0;
     text-transform: none; /* "Menu" pas "MENU" */
+    border: none;
 }
 
-/* Textes et Liens (Le Festival, Adresses...) */
+/* Textes et Liens (Le Festival, Adresses...) - TOUT EN GRAS */
 footer ul li a, 
 footer address, 
-footer p,
-.footer__link {
-    font-family: var(--font-corps); /* Montserrat */
-    font-weight: 700; /* GRAS demandé */
+footer p {
+    font-family: var(--font-corps);
+    font-weight: 700; /* Gras */
     font-size: var(--text-base);
-    color: var(--beige-claire); /* Blanc */
+    color: var(--beige-claire);
     text-decoration: none;
     line-height: 1.5;
-    display: block; /* Retour à la ligne propre */
+    display: block;
     margin-bottom: 4px;
 }
 
 footer address {
     font-style: normal;
-    margin-bottom: var(--space-lg);
 }
 
-/* Email souligné ou pas ? Généralement non dans ce style */
 footer a:hover {
     opacity: 0.8;
 }
@@ -73,7 +70,7 @@ footer a:hover {
 
 .socialmedia {
     display: flex;
-    justify-content: flex-start; /* Alignement gauche */
+    justify-content: flex-start;
     gap: var(--space-md);
     margin-top: var(--space-sm);
 }
@@ -81,24 +78,21 @@ footer a:hover {
 .socialmedia__icon {
     width: 32px;
     height: 32px;
-    /* Icônes deviennent Blanches/Beiges */
-    filter: invert(96%) sepia(5%) saturate(386%) hue-rotate(338deg) brightness(101%) contrast(92%);
+    /* Filtre pour rendre les icônes BLANCHES */
+    filter: brightness(0) invert(1);
     transition: transform 0.3s;
 }
 
 .socialmedia a:hover .socialmedia__icon {
     transform: scale(1.1);
+    opacity: 0.8;
 }
 
-/* Version Desktop : Colonnes */
+/* Responsive Desktop */
 @media (min-width: 768px) {
     .footer__content {
         display: grid;
-        /* Grille pour reproduire la disposition visuelle */
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: var(--space-xl);
     }
-    
-    /* Le logo prend toute la largeur ou une colonne ? */
-    /* Souvent le logo est au dessus ou dans la 1ère colonne */
 }

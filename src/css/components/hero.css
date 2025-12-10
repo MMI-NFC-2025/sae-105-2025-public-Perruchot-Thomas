@@ -6,15 +6,17 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* On enlève overflow:hidden si le vecteur doit déborder, 
+       mais pour un full-screen c'est mieux de le garder */
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px; /* On compense la hauteur du header fixe */
+    padding-top: 0;
 }
 
-/* --- COUCHE 1 : IMAGE DE FOND --- */
+/* --- COUCHE 1 : IMAGE DE FOND (Tout derrière) --- */
 .hero-accueil__bg-layer {
     position: absolute;
     top: 0;
@@ -27,24 +29,30 @@
 .hero-accueil__bg-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Pas de filtre ici, image brute derrière */
+    object-fit: cover; /* L'image remplit tout */
 }
 
-/* --- COUCHE 2 : VECTORIEL --- */
+/* --- COUCHE 2 : VECTORIEL (Au-dessus de l'image, sous le texte) --- */
 .hero-accueil__vector-layer {
     position: absolute;
-    top: 58%; /* "Un chouilla plus bas" que le centre (50%) */
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 1.5%;
+    left: -1%;
     width: 100%;
-    max-width: 800px; /* Taille maitrisée */
+    height: 100%;
     z-index: 2;
     pointer-events: none;
-    opacity: 1; /* "Opaque" comme demandé */
 }
 
-/* --- COUCHE 3 : CONTENU (TITRES + BULLE) --- */
+.hero-accueil__vector-img {
+    width: 110%;
+    height: 100%;
+    /* "Pas coupé" : on force l'image à remplir le cadre quitte à se déformer un peu 
+       ou on utilise 'cover' pour remplir sans déformer */ 
+    /* Si tu veux qu'il soit plus bas, on peut jouer sur la position ici ou dans le SVG */
+    object-position: center bottom; 
+}
+
+/* --- COUCHE 3 : CONTENU (Z-index plus élevé) --- */
 .hero-accueil__content {
     position: relative;
     z-index: 5;
@@ -53,73 +61,64 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--space-lg);
     width: 100%;
     height: 100%;
 }
 
-/* Bloc Titres (Plus haut) */
+/* Le reste du style (Titres, Bulle...) reste identique */
 .hero-accueil__titles {
     margin-bottom: var(--space-xl);
-    transform: translateY(-20px); /* "Se trouve un chouilla plus haut" */
+    transform: translateY(-40px); /* Remonte un peu */
 }
 
 .hero-accueil__titles h1 {
-    font-family: var(--font-titre); /* Playfair */
+    font-family: var(--font-titre);
     font-size: 70px;
-    color: var(--beige-claire); /* Titre clair sur le fond sombre */
+    color: var(--beige-claire);
     margin-bottom: var(--space-xs);
     line-height: 1;
     letter-spacing: 2px;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Pour la lisibilité */
 }
 
-/* Sous-titre Or (Montserrat petit) */
 .hero-accueil__subtitle-gold {
-    display: block;
-    font-family: var(--font-corps); /* Montserrat */
-    font-size: var(--corps); /* Taille du corps (petit) */
-    font-weight: 700;
-    color: var(--or-vieilli); /* Couleur Or */
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* Texte Vert (Optionnel, "le meme en vert sapin") */
-.hero-accueil__text-green {
+    display: inline-block; /* Permet au fond de s'adapter à la taille du texte */
     font-family: var(--font-corps);
-    font-size: var(--corps);
+    font-size: var(--text-base); /* Taille standard (16px) */
     font-weight: 700;
-    color: var(--vert-sapin);
-    text-transform: uppercase;
-    margin-top: var(--space-xs);
+    
+    /* Style "Cellule" inspiré de la capture */
+    background-color: var(--beige); /* Le fond beige */
+    color: var(--vert-sapin);       /* Le texte vert sapin */
+    padding: 8px 24px;              /* Espace intérieur */
+    border-radius: 30px;            /* Bords très arrondis (pilule) */
+    
+    text-transform: lowercase;      /* "noël 2025" en minuscules comme sur l'image */
+    letter-spacing: 1px;
+    margin-bottom: var(--space-md);
 }
 
-/* --- LA BULLE VERTE (Conteneur Dates + Bouton) --- */
+/* La Bulle Verte */
 .hero-accueil__bubble {
-    background-color: var(--vert-sapin); /* Bulle Vert Sapin */
+    background-color: var(--vert-sapin);
     width: 450px;
     height: 450px;
-    border-radius: 50%; /* Cercle parfait */
-    
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    /* Ombre pour détacher du vecteur */
     box-shadow: 0 10px 30px rgba(9, 82, 40, 0.4);
-    
-    /* Positionnement */
     margin-top: var(--space-md);
+    position: relative;
+    z-index: 6; /* Au-dessus de tout */
 }
 
 .hero-accueil__date {
-    font-family: var(--font-corps); /* Montserrat */
+    font-family: var(--font-corps);
     font-weight: 700;
-    font-size: var(--text-xl); /* Un peu plus grand pour les dates */
+    font-size: var(--text-xl);
     text-transform: uppercase;
-    color: var(--beige-claire); /* Texte clair dans la bulle verte */
+    color: var(--beige-claire);
     margin-bottom: var(--space-lg);
     text-align: center;
     max-width: 80%;
