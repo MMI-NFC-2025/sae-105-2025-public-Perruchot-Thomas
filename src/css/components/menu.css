@@ -1,0 +1,82 @@
+/* Menu Fullscreen */
+.menu {
+    position: fixed;
+    inset: 0;
+    background-color: var(--marron-fonce); /* Fond du menu ouvert */
+    z-index: 90; /* Sous le header mais sur le contenu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xl);
+    
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
+}
+
+/* État caché */
+.menu[hidden] {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.menu__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.menu__link {
+    font-family: var(--font-titre);
+    font-size: var(--gros-titre); /* 40px pour les liens du menu */
+    color: var(--beige-claire);
+    text-decoration: none;
+}
+
+.menu__link:hover,
+.menu__link[aria-current="page"] {
+    color: var(--or-vieilli);
+}
+
+/* Bouton Burger */
+.header__menu-button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 101; /* Toujours visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.menu-button__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--marron-fonce); /* Couleur barre par défaut */
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+}
+
+/* Quand le menu est ouvert, les barres deviennent beiges et font une croix */
+.header__menu-button[aria-expanded="true"] .menu-button__bar {
+    background-color: var(--beige-claire);
+}
+
+.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(2) {
+    opacity: 0;
+}
+.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}

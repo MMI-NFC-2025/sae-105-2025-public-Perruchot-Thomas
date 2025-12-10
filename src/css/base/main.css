@@ -1,0 +1,78 @@
+/* Configuration globale */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--beige-claire); /* Fond général */
+    color: var(--marron-fonce); /* Couleur texte par défaut */
+    font-family: var(--font-corps); /* Montserrat par défaut */
+    font-size: var(--corps);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- TITRES (Playfair Display) --- */
+h1, h2, h3, h4 {
+    font-family: var(--font-titre);
+    color: var(--marron-fonce);
+    font-weight: 700; /* Gras par défaut pour les titres */
+    margin-top: 0;
+    text-transform: uppercase; /* Souvent le cas dans ta maquette */
+}
+
+h1 {
+    font-size: var(--gros-titre);
+    line-height: 1.2;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--autres-titres);
+    margin-bottom: var(--space-md);
+    /* Petit soulignement or vieilli souvent vu */
+    padding-bottom: var(--space-xs);
+    display: inline-block;
+    border-bottom: 2px solid var(--or-vieilli);
+}
+
+h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+}
+
+/* --- TEXTES --- */
+p {
+    margin-bottom: var(--space-md);
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* --- LIENS --- */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--or-vieilli);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Utilitaires */
+.u-noscroll {
+    overflow: hidden; /* Utilisé par le menu JS */
+}

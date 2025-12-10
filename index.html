@@ -55,12 +55,31 @@
       </nav>
     </header>
 
-    <main>
-        <section aria-labelledby="hero-title">
-            <h1 id="hero-title">FESTICLOZE</h1>
-            <span>Noël 2025</span>
-            <p>Du 20 au 23 Décembre 2025</p> <a href="/billeterie.html">Billetterie</a> </section> 
+    <main>   
+    <section class="hero-accueil">
+        
+        <div class="hero-accueil__bg-layer">
+            <img src="/assets/images/acceuil.avif" alt="" class="hero-accueil__bg-img" />
+        </div>
 
+        <div class="hero-accueil__vector-layer">
+            <img src="/assets/vectoriel/vector1.svg" alt="" class="hero-accueil__vector-img" />
+        </div>
+
+        <div class="hero-accueil__content">
+            <div class="hero-accueil__titles">
+                <h1>FESTICLOZE</h1>
+                <span class="hero-accueil__subtitle-gold">Noël 2025</span>
+                </div>
+
+            <div class="hero-accueil__bubble">
+                <p class="hero-accueil__date">Du 20 au 23 Décembre 2025</p>
+                <a href="/billeterie.html" class="btn-primary">BILLETTERIE</a>
+            </div>
+        </div>
+
+    </section>
+    </main>
 <section class="programmation">
   <header>
     <h2>Programmation</h2>
@@ -159,32 +178,42 @@
     </main>
 
     <footer>
-        <a href="/">
-            <img alt="logo festicloze" src="/assets/icones/festiclose logo.svg" />
-        </a>
+      <div class="footer__content">
+        
+        <div>
+            <div class="footer__logo-text">FESTICLOZE</div>
+        </div>
 
-        <nav aria-label="Liens utiles"> <h3>Menu</h3>
-            <ul> <li><a href="/festival.html">Le festival</a></li>
-                <li><a href="/programmation.html">La programmation</a></li>
-                <li><a href="/Infos.html">Infos pratiques</a></li>
+        <nav aria-label="Liens utiles"> 
+            <h3>Menu</h3>
+            <ul> 
+                <li><a href="/festival.html">Le Festival</a></li>
+                <li><a href="/programmation.html">La Programmation</a></li>
+                <li><a href="/Infos.html">Infos Pratiques</a></li>
             </ul>
         </nav>
     
-        <section>
+        <div>
             <h3>Contact</h3>
-            <address> festicloze@gmail.com <br>
-                09 54 21 67 21 <br>
-                Temple Saint-Martin de Montbéliard 25200
+            <address> 
+                festicloze@gmail.com <br>
+                09.54.21.67.21 <br>
+                Temple Saint-Martin de Montbéliard <br>
+                25200
             </address>
-        </section>
-
-        <div class="socialmedia">
-            <h3>Nous suivre</h3>
-             <a href="https://www.facebook.com/?locale=fr_FR"><img class="socialmediaFacebook__img" src="/assets/icones/facebook1.svg" alt="facebook logo"></a>
-             <a href="https://www.instagram.com/"><img class="socialmediaInstagram__img" src="/assets/icones/instagram1.svg" alt="instagram logo"></a>
-             <a href="https://www.linkedin.com/feed/"><img class="socialmediaTwitter__img" src="/assets/icones/twitter1.svg" alt="linkedin logo"></a>
-             <a href="https://www.youtube.com/"><img class="socialmediaYoutube__img" src="/assets/icones/youtube1.svg" alt="youtube logo"></a>
         </div>
+
+        <div class="socialmedia-section">
+            <h3>Nous suivre</h3>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img class="socialmedia__icon" src="/assets/icones/facebook1.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/instagram1.svg" alt="Instagram"></a>
+                <a href="https://x.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/twitter1.svg" alt="Twitter"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/youtube1.svg" alt="Youtube"></a>
+            </div>
+        </div>
+
+      </div>
     </footer>
   </body>
 </html>

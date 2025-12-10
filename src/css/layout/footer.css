@@ -1,0 +1,104 @@
+/* =========================================
+   LAYOUT : FOOTER
+   ========================================= */
+
+footer {
+    background-color: var(--marron-fonce); /* Fond marron foncé */
+    color: var(--beige-claire); /* Texte blanc/beige */
+    
+    padding: var(--space-3xl) var(--space-xl);
+    margin-top: var(--space-4xl);
+    
+    text-align: left; /* Alignement GAUCHE demandé */
+}
+
+/* Conteneur global */
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titre Principal "FESTICLOZE" */
+.footer__logo-text {
+    font-family: var(--font-titre); /* Playfair */
+    font-size: var(--autres-titres);
+    color: var(--beige-claire);
+    margin-bottom: var(--space-lg);
+    text-transform: uppercase;
+}
+
+/* Titres de section (Menu, Contact, Nous suivre) */
+footer h3 {
+    font-family: var(--font-corps); /* Montserrat */
+    font-weight: 400; /* Normal (pas gras selon consigne) */
+    font-size: var(--text-lg);
+    color: var(--beige-claire);
+    margin-bottom: var(--space-md);
+    margin-top: 0;
+    text-transform: none; /* "Menu" pas "MENU" */
+}
+
+/* Textes et Liens (Le Festival, Adresses...) */
+footer ul li a, 
+footer address, 
+footer p,
+.footer__link {
+    font-family: var(--font-corps); /* Montserrat */
+    font-weight: 700; /* GRAS demandé */
+    font-size: var(--text-base);
+    color: var(--beige-claire); /* Blanc */
+    text-decoration: none;
+    line-height: 1.5;
+    display: block; /* Retour à la ligne propre */
+    margin-bottom: 4px;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: var(--space-lg);
+}
+
+/* Email souligné ou pas ? Généralement non dans ce style */
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* --- RÉSEAUX SOCIAUX --- */
+.socialmedia-section {
+    margin-top: var(--space-md);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-start; /* Alignement gauche */
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.socialmedia__icon {
+    width: 32px;
+    height: 32px;
+    /* Icônes deviennent Blanches/Beiges */
+    filter: invert(96%) sepia(5%) saturate(386%) hue-rotate(338deg) brightness(101%) contrast(92%);
+    transition: transform 0.3s;
+}
+
+.socialmedia a:hover .socialmedia__icon {
+    transform: scale(1.1);
+}
+
+/* Version Desktop : Colonnes */
+@media (min-width: 768px) {
+    .footer__content {
+        display: grid;
+        /* Grille pour reproduire la disposition visuelle */
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: var(--space-xl);
+    }
+    
+    /* Le logo prend toute la largeur ou une colonne ? */
+    /* Souvent le logo est au dessus ou dans la 1ère colonne */
+}

@@ -1,0 +1,105 @@
+/* =========================================
+   COMPONENT : CARDS
+   ========================================= */
+
+/* Grille responsive */
+.programmation__grid, 
+.artists-grid, 
+.scenes__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl); /* Plus d'espace entre les cartes */
+    margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .programmation__grid, 
+    .artists-grid, 
+    .scenes__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- STYLE CARTE PROGRAMMATION (Capture 20.28.22) --- */
+.card, .artist-card {
+    /* Fond Beige (variable --beige ou une teinte proche de la capture) */
+    background-color: var(--beige); 
+    
+    /* Coins très arrondis comme sur la capture */
+    border-radius: 40px; /* C'est la clé du design */
+    
+    /* Espacement interne généreux */
+    padding: var(--space-xl) var(--space-lg);
+    
+    /* Pas de bordure visible sur la capture */
+    border: none;
+    
+    /* Centrage du contenu */
+    text-align: center;
+    
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover, .artist-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Titre du Jour (H3) */
+.card h3 {
+    font-family: var(--font-corps); /* Montserrat */
+    font-weight: 700; /* Gras */
+    color: var(--marron-fonce);
+    font-size: var(--text-lg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-lg);
+}
+
+/* Image dans la carte */
+.card__img, .artist-card__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px; /* Coins arrondis pour l'image aussi */
+    margin-bottom: var(--space-lg);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Contenu Texte */
+.card__content {
+    color: var(--marron-fonce);
+    font-family: var(--font-corps); /* Montserrat partout */
+}
+
+/* Titre du spectacle (Grand Final...) */
+.card__show-title {
+    font-weight: 700; /* Gras */
+    font-size: var(--text-xl);
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+/* Artiste (Il Seminario...) */
+.card__artist {
+    font-weight: 700; /* Gras */
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-lg);
+}
+
+/* Description (La fête baroque) */
+.card__desc {
+    font-weight: 400; /* Normal */
+    font-size: var(--text-base);
+    text-transform: none; /* Minuscule possible */
+    margin-top: var(--space-md);
+}
+
+/* Lien global sur la carte (enlever le soulignement) */
+.card__link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}

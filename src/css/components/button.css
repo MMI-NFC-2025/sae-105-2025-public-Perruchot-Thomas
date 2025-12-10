@@ -1,0 +1,32 @@
+/* =========================================
+   COMPONENT : BUTTONS
+   ========================================= */
+
+/* Bouton Principal (Rouge comme sur la maquette) */
+.btn-primary, button[type="submit"] {
+    display: inline-block;
+    /* Utilisation de la variable rouge définie dans variables.css */
+    background-color: var(--rouge-accent); 
+    color: var(--beige-claire); /* Texte clair */
+    
+    font-family: var(--font-corps);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 32px; /* Un peu plus large */
+    
+    border-radius: var(--radius-full); /* Boutons très arrondis */
+    border: none; /* Pas de bordure sur le bouton rouge */
+    
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: var(--text-base);
+    text-align: center;
+}
+
+/* État au survol */
+.btn-primary:hover, button[type="submit"]:hover {
+    /* Au survol, on peut le passer en Or Vieilli ou l'assombrir */
+    background-color: var(--rouge-accent); 
+    transform: translateY(-2px); /* Petit effet de levier */
+}

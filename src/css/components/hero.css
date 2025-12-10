@@ -1,0 +1,134 @@
+/* =========================================
+   COMPONENT : HERO ACCUEIL
+   ========================================= */
+
+.hero-accueil {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* On compense la hauteur du header fixe */
+}
+
+/* --- COUCHE 1 : IMAGE DE FOND --- */
+.hero-accueil__bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-accueil__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Pas de filtre ici, image brute derrière */
+}
+
+/* --- COUCHE 2 : VECTORIEL --- */
+.hero-accueil__vector-layer {
+    position: absolute;
+    top: 58%; /* "Un chouilla plus bas" que le centre (50%) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px; /* Taille maitrisée */
+    z-index: 2;
+    pointer-events: none;
+    opacity: 1; /* "Opaque" comme demandé */
+}
+
+/* --- COUCHE 3 : CONTENU (TITRES + BULLE) --- */
+.hero-accueil__content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Bloc Titres (Plus haut) */
+.hero-accueil__titles {
+    margin-bottom: var(--space-xl);
+    transform: translateY(-20px); /* "Se trouve un chouilla plus haut" */
+}
+
+.hero-accueil__titles h1 {
+    font-family: var(--font-titre); /* Playfair */
+    font-size: 70px;
+    color: var(--beige-claire); /* Titre clair sur le fond sombre */
+    margin-bottom: var(--space-xs);
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Pour la lisibilité */
+}
+
+/* Sous-titre Or (Montserrat petit) */
+.hero-accueil__subtitle-gold {
+    display: block;
+    font-family: var(--font-corps); /* Montserrat */
+    font-size: var(--corps); /* Taille du corps (petit) */
+    font-weight: 700;
+    color: var(--or-vieilli); /* Couleur Or */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Texte Vert (Optionnel, "le meme en vert sapin") */
+.hero-accueil__text-green {
+    font-family: var(--font-corps);
+    font-size: var(--corps);
+    font-weight: 700;
+    color: var(--vert-sapin);
+    text-transform: uppercase;
+    margin-top: var(--space-xs);
+}
+
+/* --- LA BULLE VERTE (Conteneur Dates + Bouton) --- */
+.hero-accueil__bubble {
+    background-color: var(--vert-sapin); /* Bulle Vert Sapin */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%; /* Cercle parfait */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Ombre pour détacher du vecteur */
+    box-shadow: 0 10px 30px rgba(9, 82, 40, 0.4);
+    
+    /* Positionnement */
+    margin-top: var(--space-md);
+}
+
+.hero-accueil__date {
+    font-family: var(--font-corps); /* Montserrat */
+    font-weight: 700;
+    font-size: var(--text-xl); /* Un peu plus grand pour les dates */
+    text-transform: uppercase;
+    color: var(--beige-claire); /* Texte clair dans la bulle verte */
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-accueil__titles h1 { font-size: 40px; }
+    .hero-accueil__bubble { width: 300px; height: 300px; }
+    .hero-accueil__date { font-size: var(--text-base); }
+}

@@ -1,0 +1,28 @@
+.header {
+    position: absolute; /* Reste au dessus de l'image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 100;
+    
+    /* La bande beige demandée */
+    background-color: var(--beige-claire);
+    /* Optionnel : une petite ombre ou bordure pour détacher du fond si besoin */
+    /* border-bottom: 1px solid var(--beige); */
+}
+
+.header__logo {
+    height: 50px;
+    width: auto;
+}
+
+.header__link {
+    position: relative;
+    z-index: 101;
+}

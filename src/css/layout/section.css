@@ -1,0 +1,10 @@
+section {
+    padding: var(--space-xl) var(--space-lg);
+    max-width: 1200px; /* Conteneur centré */
+    margin: 0 auto;
+}
+
+/* Espace entre les sections */
+section + section {
+    margin-top: var(--space-xl);
+}
