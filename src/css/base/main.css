@@ -18,7 +18,7 @@ body {
 
 /* --- TITRES (Playfair Display) --- */
 h1, h2, h3, h4 {
-    font-family: var(--font-titre);
+    font-family: var(--font-corps);
     color: var(--marron-fonce);
     font-weight: 700; /* Gras par défaut pour les titres */
     margin-top: 0;
@@ -33,12 +33,12 @@ h1 {
 }
 
 h2 {
-    font-size: var(--autres-titres);
+    font-size: var(--corps);
     margin-bottom: var(--space-md);
     /* Petit soulignement or vieilli souvent vu */
     padding-bottom: var(--space-xs);
     display: inline-block;
-    border-bottom: 2px solid var(--or-vieilli);
+    
 }
 
 h3 {

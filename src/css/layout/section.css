@@ -1,10 +1,32 @@
+/* =========================================
+   LAYOUT : SECTIONS
+   ========================================= */
+
 section {
     padding: var(--space-xl) var(--space-lg);
-    max-width: 1200px; /* Conteneur centré */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Espace entre les sections */
+/* Espacement entre les sections */
 section + section {
+    margin-top: var(--space-xl);
+}
+
+/* Gestion du header pour les pages internes */
+main > section:first-child:not(.hero-accueil) {
+    padding-top: 140px;
+}
+
+/* --- SECTION HEADER (Alignement seulement) --- */
+/* C'est ici qu'on gère le centrage, car c'est de la mise en page */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+/* Le footer de section (Bouton centré) */
+.section__footer {
+    text-align: center;
     margin-top: var(--space-xl);
 }

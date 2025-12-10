@@ -1,0 +1,26 @@
+
+.badge {
+    display: inline-block;
+    background-color: var(--beige); /* Fond Beige */
+    padding: 10px 30px;
+    border-radius: 50px; /* Bords très ronds (Pilule) */
+    
+    font-family: var(--font-corps);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--text-lg);
+    letter-spacing: 1px;
+    
+    /* Par défaut en vert, mais modifiable */
+    color: var(--vert-sapin);
+}
+
+/* On peut créer des variantes si besoin */
+.badge--gold {
+    color: var(--or-vieilli);
+}
+
+.badge--small {
+    font-size: var(--text-base);
+    padding: 8px 24px;
+}
