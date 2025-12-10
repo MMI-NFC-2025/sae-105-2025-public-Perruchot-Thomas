@@ -1,64 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0"/>
-    <title>Titre du document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Festicloze</title> <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script src="src/js/script.js" defer></script>
   </head>  
+  
   <body>
-  …
+    <header class="header">
+        <a class="header__link" href="/">
+            <img class="header_logo" src="/assets/icones/festiclose logo.svg" alt="Festicloze - Retour à l'accueil" />
+        </a>
+        
+        <button
+            class="header__menu-button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="mainNav">
+            <span class="menu-button__bar" aria-hidden="true"></span>
+            <span class="menu-button__bar" aria-hidden="true"></span>
+            <span class="menu-button__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="/index.html">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/festival.html" aria-current="page">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/programmation.html">La programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/Artistes.html">Nos Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/scenes.html">Nos scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/Infos.html">Infos pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h1>LE FESTIVAL</h1> <h2>L'Esprit Festicloze</h2>
+            <p>Né au majestueux Temple Saint-Martin, Festicloze célèbre l'opéra baroque au cœur des Lumières de Montbéliard. Concerts, danses et rencontres s'unissent pour offrir une expérience unique, mêlant excellence musicale, patrimoine historique et magie de Noël.</p>
+            
+            <img 
+                src="/assets/images/saint martin.avif" 
+                alt="Vue intérieure du Temple Saint-Martin illuminé lors d'un concert baroque" 
+                class="intro-section__img" />
+        </section>
+
+        <section class="team-section">
+            <h2>Équipe</h2>
+            <p>Orchestré par une équipe passionnée, Festicloze s'appuie sur une régie technique d'experts. De la direction artistique à la mise en lumière, tous s'unissent en coulisses pour garantir une qualité de spectacle irréprochable.</p>
+            
+            <ul class="team-list">
+                <li>Sarah Monteverdi (Directrice Artistique)</li>
+                <li>L'Atelier des Lumières (Scénographie)</li>
+            </ul>
+        </section>
+
+        <section class="values-section">
+            <article>
+                <h2>Valeurs</h2>
+                <p>Respect du patrimoine et transmission du baroque à tous les publics.</p>
+            </article>
+            
+            <article>
+                <h2>Thématique 2025</h2>
+                <p>La magie de Noël sublime les artistes dans une ambiance chaleureuse.</p>
+            </article>
+            
+            <article>
+                <h2>Engagements</h2>
+                <p>Un événement éco-responsable, inclusif et ancré dans le territoire local.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a href="/">
+            <img alt="Festicloze accueil" src="/assets/icones/festiclose logo.svg" />
+        </a>
+
+        <nav aria-label="Liens utiles"> 
+            <h3>Menu</h3>
+            <ul> 
+                <li><a href="/festival.html">Le festival</a></li>
+                <li><a href="/programmation.html">La programmation</a></li>
+                <li><a href="/Infos.html">Infos pratiques</a></li>
+            </ul>
+        </nav>
+    
+        <section>
+            <h3>Contact</h3>
+            <address> 
+                festicloze@gmail.com <br>
+                09 54 21 67 21 <br>
+                Temple Saint-Martin de Montbéliard 25200
+            </address>
+        </section>
+
+        <section class="socialmedia">
+            <h3>Nous suivre</h3>
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
+                <img class="socialmedia__icon" src="/assets/icones/facebook1.svg" alt="Facebook">
+             </a>
+             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img class="socialmedia__icon" src="/assets/icones/instagram1.svg" alt="Instagram">
+             </a>
+             <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                <img class="socialmedia__icon" src="/assets/icones/twitter1.svg" alt="Twitter"> 
+             </a>
+             <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img class="socialmedia__icon" src="/assets/icones/youtube1.svg" alt="Youtube">
+             </a>
+        </section>
+    </footer>
   </body>
 </html>
-</head>
-    <body>
-        <header>
-            <header class="header">
-            <a class="header__link" href="/">
-            <img class="header_logo"
-            src="/assets/icones/festiclose logo.svg"
-            alt="Festicloze'" />
-            </a>
-            <button
-                class="header__menu-button"
-                aria-label="menu"
-                aria-expanded="false"
-                aria-controls="mainNav">
-                <span 
-                class="menu-button__bar"
-                aria-hidden="true"></span>
-                <span
-                class="menu-button__bar"
-                aria-hidden="true"></span>
-                <span
-                class="menu-button__bar"
-                aria-hidden="true"></span>
-            </button>
-            <nav class="header__menu menu" id="mainNav" hidden>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="/index.html">Accueil</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/">Le Festival</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/programmation.html">La programmation</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/Artistes.html">Nos Artistes</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/Infos.html">Nos scènes</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/artiste.html">Infos pratiques</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    
