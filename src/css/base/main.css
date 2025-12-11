@@ -11,9 +11,13 @@ html {
 body {
     background-color: var(--beige-claire);
     color: var(--marron-fonce);
+    
+    /* Corps de texte : Montserrat simple */
     font-family: var(--font-corps);
     font-size: var(--corps);
     line-height: 1.5;
+    font-weight: 400; /* Normal */
+    
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,34 +26,35 @@ body {
 /* --- TITRES --- */
 h1, h2, h3, h4 {
     color: var(--marron-fonce);
-    font-weight: 700;
     margin-top: 0;
     text-transform: uppercase;
 }
 
-/* STYLE H1 IDENTIQUE ACCUEIL (MAIS MARRON) */
+/* H1 STANDARD (Sauf exceptions gérées ailleurs) */
 h1 {
     font-family: var(--font-titre); /* Playfair Display */
-    font-size: 100px; /* Taille identique à l'accueil */
-    line-height: 1.1;
+    font-size: 35px; /* Taille demandée */
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: var(--space-lg);
-    
+    text-align: center;
 }
 
-/* Les autres titres restent en Montserrat */
+/* H2, H3, H4 : Montserrat en GRAS */
 h2, h3, h4 {
-    font-family: var(--font-corps); 
+    font-family: var(--font-corps); /* Montserrat */
+    font-weight: 700; /* En gras */
 }
 
 h2 {
-    font-size: var(--corps);
+    font-size: var(--corps); /* 16px */
     margin-bottom: var(--space-md);
     padding-bottom: var(--space-xs);
     display: inline-block;
 }
 
 h3 {
-    font-size: var(--text-xl);
+    font-size: var(--text-xl); /* 24px */
     margin-bottom: var(--space-sm);
 }
 
@@ -81,18 +86,4 @@ ul {
 
 .u-sans-defilement {
     overflow: hidden;
-}
-
-/* AJOUT RESPONSIVE POUR H1 */
-/* Pour éviter que le titre de 70px ne casse tout sur mobile */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 40px; /* Taille adaptée mobile (comme sur l'accueil) */
-    }
-}
-
-/* Empêche le défilement de la page quand le menu est ouvert */
-.noscroll {
-    overflow: hidden;
-    height: 100vh; /* Force la hauteur écran */
 }
