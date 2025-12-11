@@ -1,25 +1,43 @@
+/* =========================================
+   LAYOUT : EN-TÊTE (HEADER)
+   ========================================= */
+
 .en-tete {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: var(--space-md) var(--space-lg);
+    /* Hauteur compacte pour mobile */
+    height: 60px; 
+    
+    /* Marge latérale pour ne pas coller au bord de l'écran */
+    padding: 0 var(--space-md);
     
     display: flex;
-    justify-content: space-between;
+    /* INDISPENSABLE : Pousse le logo à gauche et le menu à droite */
+    justify-content: space-between; 
     align-items: center;
     
     z-index: 100;
-    
     background-color: var(--beige-claire);
 }
 
-.en-tete__logo {
-    height: 50px;
-    width: auto;
+.en-tete__lien {
+    display: flex;
+    align-items: center;
+    /* Sécurité pour éviter tout décalage */
+    margin: 0;
+    padding: 0;
 }
 
-.en-tete__lien {
-    position: relative;
-    z-index: 101;
+.en-tete__logo {
+    /* TAILLE FORCÉE : Vraiment petit */
+    height: 12px; 
+    width: auto;
+    display: block;
+}
+
+.en-tete__bouton-menu {
+    /* Empêche le bouton d'être écrasé */
+    flex-shrink: 0;
 }
