@@ -55,11 +55,16 @@
     background-color: #fff; /* Devient blanc pur */
 }
 
-/* Cas particulier pour le message (plus haut) */
-/* Note: Si tu as gardé <input> comme demandé, on ne peut pas changer la hauteur facilement comme un <textarea>,
-   mais on peut tricher un peu avec le padding */
+/* Cas particulier pour le message (Zone de texte) */
+textarea.formulaire-contact__champ {
+    min-height: 150px; /* Force une hauteur minimale confortable */
+    resize: vertical; /* Permet à l'utilisateur d'agrandir vers le bas seulement */
+    font-family: var(--font-corps); /* S'assure que la police reste la bonne */
+}
+
+/* Supprime l'ancienne règle #message avec le padding si elle existe encore */
 #message {
-    padding-bottom: 50px; /* Donne l'impression d'un champ plus grand */
+    padding-bottom: 0; 
 }
 
 /* Centrer le bouton d'envoi */
