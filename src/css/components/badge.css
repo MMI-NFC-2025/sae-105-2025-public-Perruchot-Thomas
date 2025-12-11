@@ -1,0 +1,23 @@
+.badge {
+    display: inline-block;
+    background-color: var(--beige);
+    padding: 10px 30px;
+    border-radius: 50px;
+    
+    font-family: var(--font-corps);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--text-lg);
+    letter-spacing: 1px;
+    
+    color: var(--vert-sapin);
+}
+
+.badge--dore {
+    color: var(--or-vieilli);
+}
+
+.badge--petit {
+    font-size: var(--text-base);
+    padding: 8px 24px;
+}
