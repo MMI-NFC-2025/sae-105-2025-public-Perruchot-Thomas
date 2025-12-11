@@ -242,3 +242,46 @@
     text-align: center;
     margin-top: var(--space-xl);
 }
+
+/* =========================================
+   SPÉCIFIQUE : CARTES TARIFS (Infos Pratiques)
+   ========================================= */
+
+/* On s'assure que la carte prend toute la largeur pour que l'alignement fonctionne */
+.carte-tarif {
+    width: 100%;
+    /* On garde l'alignement vertical pour le titre */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pousse le contenu bas vers le bas si on fixe la hauteur */
+}
+
+/* Le titre reste en haut, centré ou à gauche selon tes préférences */
+.carte-tarif__titre {
+    width: 100%;
+    text-align: left; /* Ou center, selon le design voulu */
+    margin-bottom: var(--space-lg);
+}
+
+/* Le conteneur du bas (Prix + Bouton) */
+.carte-tarif__bas {
+    display: flex;
+    justify-content: space-between; /* Pousse le prix à gauche et le bouton à droite */
+    align-items: center; /* Aligne verticalement au centre */
+    width: 100%; /* Prend toute la largeur de la carte */
+    margin-top: auto; /* Colle cette partie en bas si la carte a une hauteur fixe */
+}
+
+/* Style du prix (plus gros et gras) */
+.carte-tarif__montant {
+    font-family: var(--font-corps);
+    font-weight: 700;
+    font-size: var(--text-xl); /* On l'agrandit un peu */
+    color: var(--marron-fonce);
+    margin: 0; /* Enlève les marges par défaut pour un bon alignement */
+}
+
+/* Ajustement du bouton dans ce contexte */
+.carte-tarif__bas .bouton {
+    margin: 0; /* Enlève les marges parasites */
+}

@@ -36,3 +36,30 @@ main > section:first-child:not(.banniere-accueil) {
     margin-bottom: var(--space-lg);
 }
 
+/* Fichier : src/css/layout/section.css */
+
+/* --- PAGE INFOS PRATIQUES (Ajustements) --- */
+
+/* 1. Tarifs Billets & Gratuité : Alignement gauche forcé */
+.section-tarifs__titre {
+    text-align: left; /* Surcharge le centrage global des H2 */
+}
+
+/* Le texte "* gratuit..." suit l'alignement du conteneur (gauche), 
+   mais on peut le forcer pour être sûr */
+.section-tarifs__en-tete p {
+    text-align: left;
+}
+
+/* 2. Titres "En Voiture", "En Vélo", etc. */
+.section-acces h3 {
+    /* Typographie demandée : Montserrat, Gras, 16px */
+    font-family: var(--font-corps);
+    font-weight: 700;
+    font-size: 16px; /* ou var(--corps) */
+    
+    /* Alignement */
+    text-align: left; /* Plus propre pour une liste */
+    margin-bottom: var(--space-sm);
+}
+
