@@ -27,3 +27,31 @@ main > section:first-child:not(.banniere-accueil) {
     text-align: center;
     margin-top: var(--space-xl);
 }
+
+/* --- PAGE CONTACT (Titre Spécifique) --- */
+
+.en-tete-page {
+    text-align: center;
+    padding-top: 160px; /* Pousse le titre sous le menu fixe */
+    margin-bottom: var(--space-lg);
+}
+
+.en-tete-page h1 {
+    font-family: var(--font-titre); /* Playfair Display */
+    font-size: 50px; /* Grand titre */
+    color: var(--marron-fonce);
+    margin-bottom: var(--space-md);
+}
+
+/* Section contenant le sous-titre "Formulaire de contact" */
+.section-contact {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.section-contact h2 {
+    font-size: var(--text-xl);
+    border-bottom: 2px solid var(--or-vieilli); /* Petit soulignement déco */
+    padding-bottom: 10px;
+    display: inline-block;
+}
