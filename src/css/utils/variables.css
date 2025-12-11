@@ -1,8 +1,6 @@
-/* Import des polices Playfair Display (Titres) et Montserrat (Corps) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 
 :root {
- 
   --beige-claire: #f5f0e8;
   --beige: #e3d5c3;
   --marron-fonce: #4b2f23;
@@ -10,10 +8,8 @@
   --vert-sapin: #095228;
   --rouge-accent: #e55b5b;
 
-  
   --font-titre: 'Playfair Display', serif;
   --font-corps: 'Montserrat', sans-serif;
-
 
   --gros-titre: 40px;      
   --autres-titres: 32px;     
@@ -21,11 +17,9 @@
   --corps-gras: 16px;       
   --sous-titre: 16px; 
   
-
   --text-sm: 14px;
   --text-xl: 24px;  
 
-  
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
@@ -35,7 +29,6 @@
   --space-3xl: 64px;
   --space-4xl: 96px;
 
-  
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-full: 50px; 
