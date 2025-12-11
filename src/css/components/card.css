@@ -103,3 +103,57 @@
     color: inherit;
     width: 100%;
 }
+
+/* ... (Garde le début de ton fichier card.css) ... */
+
+/* --- PAGE DÉTAIL ARTISTE --- */
+.artist-detail {
+    /* Règle le problème du titre caché sous le header */
+    padding-top: 140px; 
+    padding-bottom: var(--space-xl);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.artist-detail__header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.artist-detail__header h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-xs);
+}
+
+.artist-detail__meta {
+    font-family: var(--font-corps);
+    color: var(--vert-sapin);
+    font-weight: 700;
+    font-size: var(--text-base);
+}
+
+/* IMAGE FORMAT TÉLÉPHONE */
+.artist-detail__img {
+    width: 100%; /* Prend toute la largeur disponible */
+    height: auto; /* Hauteur automatique pour ne pas déformer */
+    max-height: 500px; /* Limite la hauteur sur grand écran */
+    object-fit: cover;
+    border-radius: 20px; /* Joli arrondi */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: var(--space-lg);
+}
+
+.artist-detail__bio {
+    font-family: var(--font-corps);
+    font-size: var(--text-base);
+    line-height: 1.8;
+    text-align: justify; /* ou left */
+    color: var(--marron-fonce);
+}
+
+.artist-detail__actions {
+    text-align: center;
+    margin-top: var(--space-xl);
+}

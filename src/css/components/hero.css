@@ -131,3 +131,35 @@
     .hero-accueil__bubble { width: 300px; height: 300px; }
     .hero-accueil__date { font-size: var(--text-base); }
 }
+
+/* ... (Garde tout le code .hero-accueil que nous avons fait) ... */
+
+
+/* =========================================
+   COMPONENT : INTRO SECTIONS (Autres pages)
+   ========================================= */
+
+.intro-section {
+    text-align: center;
+    /* Pousse le contenu sous le header (Correction du problème) */
+    padding-top: 140px; 
+    padding-bottom: var(--space-lg);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.intro-section h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+}
+
+/* IMAGE FORMAT TÉLÉPHONE */
+.intro-section__img {
+    width: 100%; /* Force la largeur */
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
