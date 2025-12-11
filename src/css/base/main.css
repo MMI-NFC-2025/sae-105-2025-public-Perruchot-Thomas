@@ -1,4 +1,3 @@
-/* Configuration globale */
 * {
     box-sizing: border-box;
 }
@@ -8,21 +7,20 @@ html {
 }
 
 body {
-    background-color: var(--beige-claire); /* Fond général */
-    color: var(--marron-fonce); /* Couleur texte par défaut */
-    font-family: var(--font-corps); /* Montserrat par défaut */
+    background-color: var(--beige-claire);
+    color: var(--marron-fonce);
+    font-family: var(--font-corps);
     font-size: var(--corps);
     line-height: 1.5;
     margin: 0;
 }
 
-/* --- TITRES (Playfair Display) --- */
 h1, h2, h3, h4 {
     font-family: var(--font-corps);
     color: var(--marron-fonce);
-    font-weight: 700; /* Gras par défaut pour les titres */
+    font-weight: 700;
     margin-top: 0;
-    text-transform: uppercase; /* Souvent le cas dans ta maquette */
+    text-transform: uppercase;
 }
 
 h1 {
@@ -35,10 +33,8 @@ h1 {
 h2 {
     font-size: var(--corps);
     margin-bottom: var(--space-md);
-    /* Petit soulignement or vieilli souvent vu */
     padding-bottom: var(--space-xs);
     display: inline-block;
-    
 }
 
 h3 {
@@ -46,7 +42,6 @@ h3 {
     margin-bottom: var(--space-sm);
 }
 
-/* --- TEXTES --- */
 p {
     margin-bottom: var(--space-md);
 }
@@ -55,7 +50,6 @@ strong {
     font-weight: 700;
 }
 
-/* --- LIENS --- */
 a {
     color: inherit;
     text-decoration: none;
@@ -72,7 +66,6 @@ ul {
     margin: 0;
 }
 
-/* Utilitaires */
-.u-noscroll {
-    overflow: hidden; /* Utilisé par le menu JS */
+.u-sans-defilement {
+    overflow: hidden;
 }
