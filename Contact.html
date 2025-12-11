@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festicloze</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon-3/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-3/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon-3/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-3/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon-3/site.webmanifest" />
+
+    <script src="src/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="en-tete">
+      <a class="en-tete__lien" href="/">
+        <img 
+            class="en-tete__logo" 
+            src="/assets/icones/festiclose logo.svg" 
+            alt="Logo Festicloze - Retour à l'accueil" />
+      </a>
+
+      <button
+        class="en-tete__bouton-menu"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="navigation-principale">
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+      </button>
+
+      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+        <ul class="menu__liste">
+          <li class="menu__element">
+            <a class="menu__lien" href="/index.html">Accueil</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/festival.html">Le Festival</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/programmation.html">La programmation</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/Artistes.html">Nos Artistes</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/scenes.html">Nos scènes</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/Infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+        <h1>TOUT SAVOIR</h1>
+    </header>
+<section>Formulaire de contact</section>
+<form class="contactform">
+                    <div class="contactfirstname-wrapper">
+                        <label for="firstname" class="contactlabel">Prénom</label>
+                        <br>
+                        <input type="text" id="firstname" class="contactinput">
+                    </div>
+                    <div class="contactlastname-wrapper">
+                        <label for="lastname" class="contactlabel">Nom</label>
+                        <input type="text" id="lastname" class="contactinput">
+                    </div>
+                    <div class="contactobject-wrapper">
+                        <label for="object" class="contactlabel">Objet</label>
+                        <input type="text" id="object" class="contactinput">
+                    </div>
+                    <div class="contactemail-wrapper">
+                        <label for="email" class="contactlabel">E-mail</label>
+                        <input type="text" id="email" class="contactinput">
+                    </div>
+                    <div class="contact__message-wrapper">
+                        <label for="message" class="contactlabel">Message</label>
+                        <input type="text" id="message" class="contactinput">
+                    </div>
+                    <button class="contactsubmit-btn" type="submit">Envoyer</button>
+                </form>
+<footer class="pied-de-page">
+      <div class="pied-de-page__contenu">
+        
+        <div>
+          <div class="pied-de-page__texte-logo">FESTICLOZE</div>
+        </div>
+
+        <nav aria-label="Liens utiles du pied de page">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/festival.html">Le Festival</a></li>
+            <li><a href="/programmation.html">La Programmation</a></li>
+            <li><a href="/Infos.html">Infos Pratiques</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contact</h3>
+          <address>
+            festicloze@gmail.com <br />
+            09.54.21.67.21 <br />
+            Temple Saint-Martin de Montbéliard <br />
+            25200
+          </address>
+        </div>
+
+        <div class="reseaux-sociaux">
+          <h3>Nous suivre</h3>
+          <div class="reseaux-sociaux__liste">
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/facebook1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/instagram1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/twitter1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Youtube">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/youtube1.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
