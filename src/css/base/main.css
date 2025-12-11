@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
 /* H1 STANDARD (Sauf exceptions gérées ailleurs) */
 h1 {
     font-family: var(--font-titre); /* Playfair Display */
-    font-size: 35px; /* Taille demandée */
+    font-size: 30px; /* Taille demandée */
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--space-lg);
@@ -86,4 +86,9 @@ ul {
 
 .u-sans-defilement {
     overflow: hidden;
+}
+
+.noscroll {
+    overflow: hidden;
+    height: 100vh; 
 }
