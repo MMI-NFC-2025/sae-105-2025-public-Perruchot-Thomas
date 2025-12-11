@@ -36,7 +36,7 @@
       <nav class="en-tete__menu menu" id="navigation-principale" hidden>
         <ul class="menu__liste">
           <li class="menu__element">
-            <a class="menu__lien" href="/index.html">Accueil</a>
+            <a class="menu__lien" href="/">Accueil</a>
           </li>
           <li class="menu__element">
             <a class="menu__lien" href="/festival.html">Le Festival</a>
@@ -54,40 +54,54 @@
             <a class="menu__lien" href="/Infos.html">Infos pratiques</a>
           </li>
           <li class="menu__element">
-            <a class="menu__lien" href="/">Contact</a>
+            <a class="menu__lien" href="/Contact.html" aria-current="page">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <header>
-        <h1>TOUT SAVOIR</h1>
-    </header>
-<section>Formulaire de contact</section>
-<form class="contactform">
-                    <div class="contactfirstname-wrapper">
-                        <label for="firstname" class="contactlabel">Prénom</label>
-                        <br>
-                        <input type="text" id="firstname" class="contactinput">
-                    </div>
-                    <div class="contactlastname-wrapper">
-                        <label for="lastname" class="contactlabel">Nom</label>
-                        <input type="text" id="lastname" class="contactinput">
-                    </div>
-                    <div class="contactobject-wrapper">
-                        <label for="object" class="contactlabel">Objet</label>
-                        <input type="text" id="object" class="contactinput">
-                    </div>
-                    <div class="contactemail-wrapper">
-                        <label for="email" class="contactlabel">E-mail</label>
-                        <input type="text" id="email" class="contactinput">
-                    </div>
-                    <div class="contact__message-wrapper">
-                        <label for="message" class="contactlabel">Message</label>
-                        <input type="text" id="message" class="contactinput">
-                    </div>
-                    <button class="contactsubmit-btn" type="submit">Envoyer</button>
-                </form>
-<footer class="pied-de-page">
+
+    <main>
+        <header class="en-tete-page">
+            <h1>TOUT SAVOIR</h1>
+        </header>
+
+        <section class="section-contact">
+            <h2>Formulaire de contact</h2>
+        </section>
+
+        <form class="formulaire-contact">
+            
+            <div class="formulaire-contact__groupe">
+                <label for="firstname" class="formulaire-contact__etiquette">Prénom</label>
+                <br />
+                <input type="text" id="firstname" class="formulaire-contact__champ" />
+            </div>
+
+            <div class="formulaire-contact__groupe">
+                <label for="lastname" class="formulaire-contact__etiquette">Nom</label>
+                <input type="text" id="lastname" class="formulaire-contact__champ" />
+            </div>
+
+            <div class="formulaire-contact__groupe">
+                <label for="object" class="formulaire-contact__etiquette">Objet</label>
+                <input type="text" id="object" class="formulaire-contact__champ" />
+            </div>
+
+            <div class="formulaire-contact__groupe">
+                <label for="email" class="formulaire-contact__etiquette">E-mail</label>
+                <input type="email" id="email" class="formulaire-contact__champ" />
+            </div>
+
+            <div class="formulaire-contact__groupe">
+                <label for="message" class="formulaire-contact__etiquette">Message</label>
+                <input type="text" id="message" class="formulaire-contact__champ" />
+            </div>
+
+            <button class="bouton bouton--envoi" type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer class="pied-de-page">
       <div class="pied-de-page__contenu">
         
         <div>

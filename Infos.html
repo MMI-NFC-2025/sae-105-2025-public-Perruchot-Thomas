@@ -51,7 +51,7 @@
             <a class="menu__lien" href="/scenes.html">Nos scènes</a>
           </li>
           <li class="menu__element">
-            <a class="menu__lien" href="/Infos.html">Infos pratiques</a>
+            <a class="menu__lien" href="/Infos.html" aria-current="page">Infos pratiques</a>
           </li>
           <li class="menu__element">
             <a class="menu__lien" href="/Contact.html">Contact</a>
@@ -60,38 +60,38 @@
       </nav>
     </header>
 
-    <main class="main-content">
+    <main class="contenu-principal">
 
-        <section class="section section--tickets">
-            <header class="section__header">
-                <h1 class="section__main-title">Infos pratiques</h1>
-                <h2 class="section__title">Tarifs Billets</h2>
+        <section class="section-tarifs">
+            <header class="section-tarifs__en-tete">
+                <h1 class="titre-principal">Infos pratiques</h1>
+                <h2 class="section-tarifs__titre">Tarifs Billets</h2>
                 <p>* gratuit pour les enfants de moins de 10 ans</p>
             </header>
 
-            <div class="cards-grid">
-                <article class="card-price">
-                    <h3 class="card-price__title">Billet pour 1 soirée</h3>
-                    <p class="card-price__amount">30€</p>
-                    <a href="#" class="card-price__button button">Acheter</a>
+            <div class="section-tarifs__grille">
+                <article class="carte-tarif">
+                    <h3 class="carte-tarif__titre">Billet pour 1 soirée</h3>
+                    <p class="carte-tarif__montant">30€</p>
+                    <a href="#" class="bouton bouton--achat" aria-label="Acheter un billet pour 1 soirée">Acheter</a>
                 </article>
 
-                <article class="card-price">
-                    <h3 class="card-price__title">Billet pour 2 soirées</h3>
-                    <p class="card-price__amount">50€</p>
-                    <a href="#" class="card-price__button button">Acheter</a>
+                <article class="carte-tarif">
+                    <h3 class="carte-tarif__titre">Billet pour 2 soirées</h3>
+                    <p class="carte-tarif__montant">50€</p>
+                    <a href="#" class="bouton bouton--achat" aria-label="Acheter un billet pour 2 soirées">Acheter</a>
                 </article>
 
-                <article class="card-price">
-                    <h3 class="card-price__title">Billet pour 4 soirées</h3>
-                    <p class="card-price__amount">80€</p>
-                    <a href="#" class="card-price__button button">Acheter</a>
+                <article class="carte-tarif">
+                    <h3 class="carte-tarif__titre">Billet pour 4 soirées</h3>
+                    <p class="carte-tarif__montant">80€</p>
+                    <a href="#" class="bouton bouton--achat" aria-label="Acheter un billet pour 4 soirées">Acheter</a>
                 </article>
             </div>
         </section>
 
-        <section class="section section--accommodation">
-            <h2 class="section__title">Comment venir</h2>
+        <section class="section-acces">
+            <h2 class="section-acces__titre">Comment venir</h2>
            
            <div>
             <h3> En Voiture</h3>
@@ -113,19 +113,16 @@
                 <li>Pour partager la route, recherchez le mot-clé unique “Festicloze” sur l'application BlaBlaCar.</li>
             </ul>
            </div>
-            
-           
-
-        <section class="section section--faq">
-            <h2 class="section__title">FAQ</h2>
-            <ul class="list list--faq">
-                <li class="list__item">Où se situe exactement le festival ?</li>
-                <li class="list__item">Le festival est-il accessible aux familles ?</li>
-                <li class="list__item">Y a-t-il de la restauration sur place ?</li>
+        </section> <section class="section-faq">
+            <h2 class="section-faq__titre">FAQ</h2>
+            <ul class="liste-faq">
+                <li class="liste-faq__element">Où se situe exactement le festival ?</li>
+                <li class="liste-faq__element">Le festival est-il accessible aux familles ?</li>
+                <li class="liste-faq__element">Y a-t-il de la restauration sur place ?</li>
             </ul>
 
-            <div class="section__action">
-                <a href="/9.contact.html" class="button button--cta">POSER UNE QUESTION</a>
+            <div class="section-faq__action">
+                <a href="/Contact.html" class="bouton bouton--action">POSER UNE QUESTION</a>
             </div>
         </section>
 
@@ -179,5 +176,3 @@
     </footer>
   </body>
 </html>
-
-
