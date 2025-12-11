@@ -2,24 +2,25 @@
    LAYOUT : EN-TÊTE (HEADER)
    ========================================= */
 
+/* Fichier : src/css/layout/header.css */
+
 .en-tete {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* Hauteur compacte pour mobile */
-    height: 60px; 
-    
-    /* Marge latérale pour ne pas coller au bord de l'écran */
+    height: 70px; /* Hauteur fixe */
     padding: 0 var(--space-md);
     
     display: flex;
-    /* INDISPENSABLE : Pousse le logo à gauche et le menu à droite */
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     
     z-index: 100;
     background-color: var(--beige-claire);
+    
+    /* AJOUT DE L'OMBRE ICI */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .en-tete__lien {

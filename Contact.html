@@ -71,9 +71,10 @@
 
         <form class="formulaire-contact">
             
+            <div class="formulaire-contact__ligne">
+                
             <div class="formulaire-contact__groupe">
                 <label for="firstname" class="formulaire-contact__etiquette">Prénom</label>
-                <br />
                 <input type="text" id="firstname" class="formulaire-contact__champ" />
             </div>
 
@@ -82,6 +83,7 @@
                 <input type="text" id="lastname" class="formulaire-contact__champ" />
             </div>
 
+            </div>
             <div class="formulaire-contact__groupe">
                 <label for="object" class="formulaire-contact__etiquette">Objet</label>
                 <input type="text" id="object" class="formulaire-contact__champ" />
@@ -94,7 +96,7 @@
 
             <div class="formulaire-contact__groupe">
                 <label for="message" class="formulaire-contact__etiquette">Message</label>
-                <input type="text" id="message" class="formulaire-contact__champ" />
+                <textarea id="message" class="formulaire-contact__champ" rows="6"></textarea>
             </div>
 
             <button class="bouton bouton--envoi" type="submit">Envoyer</button>

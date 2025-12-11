@@ -63,3 +63,59 @@ main > section:first-child:not(.banniere-accueil) {
     margin-bottom: var(--space-sm);
 }
 
+.section-tarifs__en-tete {
+    text-align: left !important; /* !important force la priorité */
+}
+
+/* =========================================
+   STYLE SPÉCIFIQUE : FAQ (Infos Pratiques)
+   ========================================= */
+
+/* 1. Le conteneur principal "Vert Sapin" */
+.section-faq {
+    background-color: var(--vert-sapin); /* Fond vert */
+    color: var(--beige-claire); /* Texte général en clair */
+    
+    border-radius: 40px; /* Coins très arrondis (Style Cellule) */
+    padding: var(--space-xl); /* Espace intérieur */
+    
+    /* On réduit un peu la largeur pour faire une belle boîte centrée */
+    max-width: 800px; 
+    margin: var(--space-xl) auto; /* Centré horizontalement */
+}
+
+/* 2. Le Titre "FAQ" en beige */
+.section-faq__titre {
+    color: var(--beige-claire) !important; /* Force la couleur beige */
+    text-align: center; /* Titre centré */
+    margin-bottom: var(--space-lg);
+    border: none; /* Retire les traits de soulignement éventuels */
+}
+
+/* 3. La liste des questions */
+.liste-faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md); /* Espace entre chaque question */
+    list-style: none; /* Pas de puces */
+    padding: 0;
+}
+
+/* 4. Chaque question : Cellule "Beige" */
+.liste-faq__element {
+    background-color: var(--beige); /* Fond beige */
+    color: var(--marron-fonce); /* Texte marron foncé pour le contraste */
+    
+    padding: 15px 25px; /* Espace interne confortable */
+    border-radius: 30px; /* Forme pilule/cellule */
+    
+    font-family: var(--font-corps);
+    font-weight: 700; /* En gras */
+    text-align: left; /* Texte aligné à gauche */
+}
+
+/* 5. Le bouton "Poser une question" */
+.section-faq__action {
+    text-align: center; /* Bouton centré dans la zone verte */
+    margin-top: var(--space-xl);
+}
