@@ -145,8 +145,8 @@
     position: relative;
     width: 100%;
     /* Hauteur moins grande que l'accueil, mais impactante */
-    height: 60vh; 
-    min-height: 400px;
+    height: vh; 
+    min-height: 700px;
     
     display: flex;
     align-items: center;
@@ -204,7 +204,6 @@
 
 .section-esprit__image {
     width: 100%;
-    height: auto;
-    border-radius: 20px;
+    height: 100%;
     margin-top: var(--space-lg);
 }

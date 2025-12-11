@@ -97,6 +97,7 @@
     width: 100%;
 }
 
+/* --- PAGE DÉTAIL ARTISTE --- */
 .detail-artiste {
     padding-top: 140px; 
     padding-bottom: var(--space-xl);
@@ -111,9 +112,14 @@
     margin-bottom: var(--space-lg);
 }
 
+/* MODIFICATION DU TITRE DES ARTISTES */
 .detail-artiste__en-tete h1 {
-    font-size: var(--text-3xl);
-    margin-bottom: var(--space-xs);
+    font-family: var(--font-corps); /* Montserrat (comme le texte) */
+    font-size: var(--text-lg);      /* Taille corps (un tout petit peu plus grand pour lisibilité) */
+    font-weight: 700;               /* En gras */
+    text-transform: uppercase;      /* Garde les majuscules */
+    margin-bottom: var(--space-md); /* Plus d'espace dessous pour le "remonter" visuellement */
+    line-height: 1.4;
 }
 
 .detail-artiste__infos {
@@ -123,14 +129,14 @@
     font-size: var(--text-base);
 }
 
+/* MODIFICATION DE L'IMAGE */
 .detail-artiste__image {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
+    width: 100%;       /* Prend toute la largeur */
+    height: 100%;      /* Hauteur automatique (plus de limite max) */ 
     object-fit: cover;
-    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     margin-bottom: var(--space-lg);
+
 }
 
 .detail-artiste__bio {
