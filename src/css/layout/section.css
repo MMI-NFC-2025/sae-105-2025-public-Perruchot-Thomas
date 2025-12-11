@@ -1,32 +1,29 @@
-/* =========================================
-   LAYOUT : SECTIONS
-   ========================================= */
-
 section {
     padding: var(--space-xl) var(--space-lg);
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Espacement entre les sections */
 section + section {
     margin-top: var(--space-xl);
 }
 
-/* Gestion du header pour les pages internes */
-main > section:first-child:not(.hero-accueil) {
+main > section:first-child:not(.banniere-accueil) {
     padding-top: 140px;
 }
 
-/* --- SECTION HEADER (Alignement seulement) --- */
-/* C'est ici qu'on gère le centrage, car c'est de la mise en page */
-.section-header {
+.section-programmation__en-tete,
+.scenes__en-tete,
+.section-artistes__en-tete,
+.section-tarifs__en-tete,
+.detail-artiste__en-tete {
     text-align: center;
     margin-bottom: var(--space-lg);
 }
 
-/* Le footer de section (Bouton centré) */
-.section__footer {
+.section-programmation__pied,
+.section-faq__action,
+.detail-artiste__actions {
     text-align: center;
     margin-top: var(--space-xl);
 }
