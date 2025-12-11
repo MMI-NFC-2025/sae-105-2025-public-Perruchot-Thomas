@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr"> <head>
+<html lang="fr">
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festicloze</title>
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/favicon-3/favicon-96x96.png" sizes="96x96" />
@@ -10,207 +11,226 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-3/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon-3/site.webmanifest" />
 
-    <script src="src/js/script.js" defer></script> </head>  
-  
-  <body>
-    <header class="header">
-        <a class="header__link" href="/">
-            <img class="header_logo" src="/assets/icones/festiclose logo.svg" alt="Festicloze - Retour à l'accueil" />
-        </a>
-        
-        <button
-            class="header__menu-button"
-            aria-label="Ouvrir le menu"
-            aria-expanded="false"
-            aria-controls="mainNav">
-            <span class="menu-button__bar" aria-hidden="true"></span>
-            <span class="menu-button__bar" aria-hidden="true"></span>
-            <span class="menu-button__bar" aria-hidden="true"></span>
-        </button>
+    <script src="src/js/script.js" defer></script>
+  </head>
 
-     <nav class="header__menu menu" id="mainNav" hidden>
-      <ul class="menu__list">
-        <li class="menu__item">
-            <a class="menu__link" href="/">Accueil</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/festival.html">Le Festival</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/programmation.html">La programmation</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/Artistes.html">Nos Artistes</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/scenes.html">Nos scènes</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/Infos.html">Infos pratiques</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/Contact.html">Contact</a>
-        </li>
+  <body>
+    <header class="en-tete">
+      <a class="en-tete__lien" href="/">
+        <img 
+            class="en-tete__logo" 
+            src="/assets/icones/festiclose logo.svg" 
+            alt="Logo Festicloze - Retour à l'accueil" />
+      </a>
+
+      <button
+        class="en-tete__bouton-menu"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="navigation-principale">
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+      </button>
+
+      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+        <ul class="menu__liste">
+          <li class="menu__element">
+            <a class="menu__lien" href="/">Accueil</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/festival.html">Le Festival</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/programmation.html">La programmation</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/Artistes.html">Nos Artistes</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/scenes.html">Nos scènes</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/Infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__element">
+            <a class="menu__lien" href="/Contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>   
-    <section class="hero-accueil">
+    <main>
+      <section class="banniere-accueil">
         
-        <div class="hero-accueil__bg-layer">
-            <img src="/assets/images/acceuil.avif" alt="" class="hero-accueil__bg-img" />
+        <div class="banniere-accueil__couche-fond">
+          <img 
+            src="/assets/images/acceuil.avif" 
+            alt="Ambiance lumineuse et festive du festival" 
+            class="banniere-accueil__image-fond" />
         </div>
 
-        <div class="hero-accueil__vector-layer">
-            <img src="/assets/vectoriel/vector1.svg" alt="" class="hero-accueil__vector-img" />
+        <div class="banniere-accueil__couche-vecteur">
+          <img 
+            src="/assets/vectoriel/vector1.svg" 
+            alt="" 
+            aria-hidden="true"
+            class="banniere-accueil__image-vecteur" />
         </div>
 
-        <div class="hero-accueil__content">
-            <div class="hero-accueil__titles">
-                <h1>FESTICLOZE</h1>
-                <span class="hero-accueil__subtitle-gold">Noël 2025</span>
-                </div>
+        <div class="banniere-accueil__contenu">
+          <div class="banniere-accueil__titres">
+            <h1>FESTICLOZE</h1>
+            <span class="banniere-accueil__sous-titre--dore">Noël 2025</span>
+          </div>
 
-            <div class="hero-accueil__bubble">
-                <p class="hero-accueil__date">Du 20 au 23 Décembre 2025</p>
-                <a href="/billeterie.html" class="btn-primary">BILLETTERIE</a>
-            </div>
+          <div class="banniere-accueil__bulle">
+            <p class="banniere-accueil__date">Du 20 au 23 Décembre 2025</p>
+            <a href="/billeterie.html" class="bouton bouton--primaire">BILLETTERIE</a>
+          </div>
         </div>
 
-    </section>
+      </section>
+
+      <section class="section-programmation">
+        <header class="section-programmation__en-tete">
+          <h2 class="badge">Programmation</h2>
+        </header>
+
+        <div class="section-programmation__grille">
+          
+          <article class="carte">
+            <h3>Jour 1 - Samedi - 20/12</h3>
+            <a href="/Artist1.html" class="carte__lien">
+              <img
+                class="carte__image"
+                alt="Scène de l'opéra L'Orfeo"
+                src="/assets/images/image display4.avif" />
+              <div class="carte__contenu">
+                <p class="carte__titre-spectacle"><strong>L’Orfeo</strong></p>
+                <p class="carte__artiste">Il Giardino Armonico</p>
+                <p class="carte__description">Aux origines de l’opéra</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="carte">
+            <h3>Jour 2 - Dimanche - 21/12</h3>
+            <a href="/Artist2.html" class="carte__lien">
+              <img
+                class="carte__image"
+                alt="Scène de l'opéra Armide"
+                src="/assets/images/image display3.avif" />
+              <div class="carte__contenu">
+                <p class="carte__titre-spectacle"><strong>Armide</strong></p>
+                <p class="carte__artiste">Les Arts Florissants</p>
+                <p class="carte__description">Sous le règne du Roi-Soleil</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="carte">
+            <h3>Jour 3 - Lundi - 22/12</h3>
+            <a href="/Artist3.html" class="carte__lien">
+              <img
+                class="carte__image"
+                alt="Performance des Talens Lyriques"
+                src="/assets/images/image display2.avif" />
+              <div class="carte__contenu">
+                <p class="carte__titre-spectacle"><strong>Armide</strong></p>
+                <p class="carte__artiste">Les Talens Lyriques</p>
+                <p class="carte__description">Passions et virtuosité</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="carte">
+            <h3>Jour 4 - Mardi - 23/12</h3>
+            <a href="/Artist4.html" class="carte__lien">
+              <img
+                class="carte__image"
+                alt="Grand final festif baroque"
+                src="/assets/images/image display.avif" />
+              <div class="carte__contenu">
+                <p class="carte__titre-spectacle"><strong>Grand Final de Noël</strong></p>
+                <p class="carte__artiste">Il Seminario Musicale</p>
+                <p class="carte__description">La fête baroque</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="section-programmation__pied">
+          <a href="/programmation.html" class="bouton bouton--primaire">Voir le programme complet</a>
+        </div>
+      </section>
+
+      <section class="infos-pratiques">
+        <h2 class="infos-pratiques__titre">Infos pratiques</h2>
+        <p class="infos-pratiques__intro">Le Festival Baroque de Noël vous accueille au Temple Saint-Martin de Montbéliard pour sa première édition.</p>
+
+        <ul class="infos-pratiques__liste">
+          <li>Parking gratuit à proximité</li>
+          <li>Espace vélo</li>
+          <li>Bar hivernal & douceurs locales</li>
+          <li>Animations et découverte du baroque</li>
+          <li>Boutique du festival</li>
+        </ul>
+      </section>
+
+      <section class="partenaires">
+        <h2 class="partenaires__titre">Nos Partenaires</h2>
+        <ul class="partenaires__liste">
+          <li>Ville de Montbéliard</li>
+          <li>Pays de Montbéliard Agglomération</li>
+          <li>Région Bourgogne-Franche-Comté</li>
+        </ul>
+      </section>
     </main>
-<section class="programmation">
-  <header class="section-header">
-    <h2 class="badge">Programmation</h2>
-  </header>
-  
-  <div class="programmation__grid">
-  
-    <article class="card">
-      <h3>Jour 1 - Samedi - 20/12</h3>
-      <a href="/Artist1.html" class="card__link">
-        <img
-          class="card__img"
-          alt="" 
-          src="/assets/images/image display4.avif" />
-        <div class="card__content">
-           <p class="card__show-title"><strong>L’Orfeo</strong></p>
-           <p class="card__artist">Il Giardino Armonico</p>
-           <p class="card__desc">Aux origines de l’opéra</p>
-        </div>
-      </a>
-    </article>
 
-    <article class="card">
-      <h3>Jour 2 - Dimanche - 21/12</h3>
-      <a href="/Artist2.html" class="card__link">
-        <img
-          class="card__img"
-          alt=""
-          src="/assets/images/image display3.avif" />
-        <div class="card__content">
-           <p class="card__show-title"><strong>Armide</strong></p>
-           <p class="card__artist">Les Arts Florissants</p>
-           <p class="card__desc">Sous le règne du Roi-Soleil</p>
-        </div>
-      </a>
-    </article>
-
-    <article class="card">
-      <h3>Jour 3 - Lundi - 22/12</h3>
-      <a href="/Artist3.html" class="card__link">
-        <img
-          class="card__img"
-          alt=""
-          src="/assets/images/image display2.avif" />
-        <div class="card__content">
-           <p class="card__show-title"><strong>Armide</strong></p> 
-           <p class="card__artist">Les Talens Lyriques</p>
-           <p class="card__desc">Passions et virtuosité</p>
-        </div>
-      </a>
-    </article>
-
-    <article class="card">
-      <h3>Jour 4 - Mardi - 23/12</h3>
-      <a href="/Artist4.html" class="card__link">
-        <img
-          class="card__img"
-          alt=""
-          src="/assets/images/image display.avif" />
-        <div class="card__content">
-           <p class="card__show-title"><strong>Grand Final de Noël</strong></p>
-           <p class="card__artist">Il Seminario Musicale</p>
-           <p class="card__desc">La fête baroque</p>
-        </div>
-      </a>
-    </article>
-
-  </div>
-
-  <div class="section__footer">
-     <a href="/programmation.html" class="btn-primary">Voir le programme complet</a>
-  </div>
-</section>
-
-        <section>
-            <h2>Infos pratiques</h2>
-            <p>Le Festival Baroque de Noël vous accueille au Temple Saint-Martin de Montbéliard pour sa première édition.</p>
-            
-            <ul>
-                <li>Parking gratuit à proximité</li>
-                <li>Espace vélo</li>
-                <li>Bar hivernal & douceurs locales</li>
-                <li>Animations et découverte du baroque</li>
-                <li>Boutique du festival</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Nos Partenaires</h2>
-            <ul>
-                <li>Ville de Montbéliard</li>
-                <li>Pays de Montbéliard Agglomération</li>
-                <li>Région Bourgogne-Franche-Comté</li>
-                </ul>
-        </section>
-    </main>
-
-    <footer>
-      <div class="footer__content">
+    <footer class="pied-de-page">
+      <div class="pied-de-page__contenu">
         
         <div>
-            <div class="footer__logo-text">FESTICLOZE</div>
+          <div class="pied-de-page__texte-logo">FESTICLOZE</div>
         </div>
 
-        <nav aria-label="Liens utiles"> 
-            <h3>Menu</h3>
-            <ul> 
-                <li><a href="/festival.html">Le Festival</a></li>
-                <li><a href="/programmation.html">La Programmation</a></li>
-                <li><a href="/Infos.html">Infos Pratiques</a></li>
-            </ul>
+        <nav aria-label="Liens utiles du pied de page">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/festival.html">Le Festival</a></li>
+            <li><a href="/programmation.html">La Programmation</a></li>
+            <li><a href="/Infos.html">Infos Pratiques</a></li>
+          </ul>
         </nav>
-    
+
         <div>
-            <h3>Contact</h3>
-            <address> 
-                festicloze@gmail.com <br>
-                09.54.21.67.21 <br>
-                Temple Saint-Martin de Montbéliard <br>
-                25200
-            </address>
+          <h3>Contact</h3>
+          <address>
+            festicloze@gmail.com <br />
+            09.54.21.67.21 <br />
+            Temple Saint-Martin de Montbéliard <br />
+            25200
+          </address>
         </div>
 
-        <div class="socialmedia-section">
-            <h3>Nous suivre</h3>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img class="socialmedia__icon" src="/assets/icones/facebook1.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/instagram1.svg" alt="Instagram"></a>
-                <a href="https://x.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/twitter1.svg" alt="Twitter"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="socialmedia__icon" src="/assets/icones/youtube1.svg" alt="Youtube"></a>
-            </div>
+        <div class="reseaux-sociaux">
+          <h3>Nous suivre</h3>
+          <div class="reseaux-sociaux__liste">
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/facebook1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/instagram1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/twitter1.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Youtube">
+                <img class="reseaux-sociaux__icone" src="/assets/icones/youtube1.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
         </div>
 
       </div>
