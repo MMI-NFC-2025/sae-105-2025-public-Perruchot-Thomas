@@ -1,8 +1,6 @@
-/* =========================================
-   COMPONENT : MENU & BURGER
-   ========================================= */
 
-/* Menu Plein Écran */
+
+
 .menu {
     position: fixed;
     inset: 0;
@@ -10,20 +8,16 @@
     z-index: 90;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    /* MODIFICATION : On aligne le contenu à gauche (au lieu de center) */
-    align-items: flex-start; 
-    
-    padding: var(--space-xl);
-    
+    justify-content: center; 
+    align-items: flex-start;  
+    padding: var(--space-xl); 
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: all 0.4s ease-in-out;
 }
 
-/* État caché */
+
 .menu[hidden] {
     opacity: 0;
     visibility: hidden;
@@ -31,26 +25,23 @@
     pointer-events: none;
 }
 
-.menu__liste {
-    /* MODIFICATION : Texte aligné à gauche */
-    text-align: left;
-    
+.menu__liste {   
+    text-align: left;   
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
-    width: 100%; /* Prend toute la largeur disponible */
+    width: 100%; 
 }
 
 .menu__lien {
-    /* MODIFICATION : Police Montserrat (Corps), en Gras, taille standard */
+    
     font-family: var(--font-corps);
     font-weight: 700;
-    font-size: var(--corps); /* ou 16px */
-    
+    font-size: var(--corps);   
     color: var(--beige-claire);
     text-decoration: none;
     transition: color 0.3s;
-    display: block; /* Pour prendre plus de place au clic */
+    display: block; 
 }
 
 .menu__lien:hover,
@@ -58,7 +49,7 @@
     color: var(--or-vieilli);
 }
 
-/* BOUTON BURGER (Reste inchangé) */
+
 .en-tete__bouton-menu {
     width: 40px;
     height: 40px;
@@ -83,7 +74,7 @@
     transform-origin: center;
 }
 
-/* Animation en Croix quand le menu est ouvert */
+
 .en-tete__bouton-menu[aria-expanded="true"] .bouton-menu__barre {
     background-color: var(--beige-claire);
 }

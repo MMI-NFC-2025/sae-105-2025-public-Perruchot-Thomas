@@ -72,7 +72,6 @@
     font-family: var(--font-corps);
     font-size: var(--text-base);
     font-weight: 700;
-    
     background-color: var(--beige);
     color: var(--vert-sapin);
     padding: 8px 24px;
@@ -95,7 +94,6 @@
     box-shadow: 0 10px 30px rgba(9, 82, 40, 0.4);
     margin-top: var(--space-md);
     margin-bottom: var(--space-2xl) ;
-   
     position: relative;
     z-index: 6;
 }
@@ -130,19 +128,14 @@
     margin-bottom: var(--space-md);
 }
 
-/* Fichier : src/css/components/hero.css */
-
 .section-intro__image,
 .section-esprit__image {
     width: 100%;
     height: auto;
     max-height: 400px;
     object-fit: cover;
-    object-position: center;
-    
-    /* MODIFICATION ICI : Pas d'arrondi */
-    border-radius: 0; 
-    
+    object-position: center;  
+    border-radius: 0;  
     margin-top: var(--space-md);
     margin-bottom: var(--space-lg);
     display: block;
@@ -152,17 +145,13 @@
 
 .banniere-festival {
     position: relative;
-    width: 100%;
-    /* Hauteur moins grande que l'accueil, mais impactante */
+    width: 100%; 
     height: vh; 
-    min-height: 700px;
-    
+    min-height: 700px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    
-    /* Annule le padding des sections classiques pour coller aux bords */
+    overflow: hidden; 
     padding: 0 !important; 
     margin-top: 0 !important;
 }
@@ -174,8 +163,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
-    /* Petit filtre sombre pour que le texte ressorte bien */
+    z-index: 1;  
     filter: brightness(0.6); 
 }
 
@@ -188,16 +176,15 @@
 
 .banniere-festival__titre {
     font-family: var(--font-titre);
-    font-size: 70px; /* Même taille que l'accueil */
-    color: var(--beige-claire) !important; /* Force le blanc/beige */
+    font-size: 70px; 
+    color: var(--beige-claire) !important; 
     margin: 0;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Ombre pour lisibilité */
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5); 
 }
 
-/* Responsive Mobile */
 @media (max-width: 768px) {
     .banniere-festival {
-        height: 50vh; /* Un peu plus petit sur mobile */
+        height: 50vh; 
     }
     
     .banniere-festival__titre {
@@ -205,17 +192,15 @@
     }
 }
 
-/* Fichier : src/css/components/hero.css */
-
 .section-esprit {
-    text-align: left; /* Aligne le paragraphe à gauche */
+    text-align: left; 
     margin-top: var(--space-xl);
 }
 
-/* AJOUT : On force le titre h2 de cette section à gauche aussi */
+
 .section-esprit h2 {
     text-align: left;
-    display: block; /* S'assure qu'il prend toute la largeur pour s'aligner */
+    display: block; 
 }
 
 .section-esprit__image {
@@ -227,8 +212,6 @@
     margin-top: var(--space-md);
     margin-bottom: var(--space-lg);
     display: block;
-    
-    /* On aligne aussi l'image à gauche si elle ne prend pas toute la largeur */
     margin-left: 0; 
     margin-right: auto;
 }

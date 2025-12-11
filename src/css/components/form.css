@@ -1,84 +1,69 @@
-/* =========================================
-   COMPONENT : FORMULAIRE CONTACT
-   ========================================= */
 
-/* Le conteneur du formulaire (Style "Carte") */
 .formulaire-contact {
-    background-color: var(--beige); /* Fond beige comme les cartes */
-    border-radius: 40px; /* Coins très arrondis */
-    padding: var(--space-xl); /* Espace intérieur */
-    max-width: 600px; /* Largeur max pour ne pas qu'il soit trop large */
-    margin: 0 auto; /* Centré horizontalement */
-    margin-bottom: var(--space-3xl);
-    
+    background-color: var(--beige);
+    border-radius: 40px;
+    padding: var(--space-xl);
+    max-width: 600px; 
+    margin: 0 auto; 
+    margin-bottom: var(--space-3xl);   
     display: flex;
     flex-direction: column;
-    gap: var(--space-md); /* Espace entre les champs */
+    gap: var(--space-md); 
 }
 
-/* Les groupes (Label + Input) */
 .formulaire-contact__groupe {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-/* Les étiquettes (Prénom, Nom...) */
 .formulaire-contact__etiquette {
     font-family: var(--font-corps);
     font-weight: 700;
     color: var(--marron-fonce);
-    margin-bottom: 8px; /* Petit espace sous le texte */
-    margin-left: 10px; /* Aligné avec l'arrondi du champ */
+    margin-bottom: 8px; 
+    margin-left: 10px; 
 }
 
-/* Les champs de saisie (Input) */
 .formulaire-contact__champ {
     width: 100%;
-    padding: 15px 20px;
-    
-    background-color: var(--beige-claire); /* Fond plus clair pour écrire */
-    border: 1px solid transparent; /* Pas de bordure visible par défaut */
-    border-radius: 30px; /* Champs très ronds (Pilule) */
-    
+    padding: 15px 20px;  
+    background-color: var(--beige-claire); 
+    border: 1px solid transparent; 
+    border-radius: 30px;   
     font-family: var(--font-corps);
     color: var(--marron-fonce);
-    font-size: var(--text-base);
-    
+    font-size: var(--text-base);   
     transition: all 0.3s ease;
 }
 
-/* Effet quand on clique dans le champ */
+
 .formulaire-contact__champ:focus {
     outline: none;
-    border-color: var(--or-vieilli); /* Bordure dorée au clic */
-    background-color: #fff; /* Devient blanc pur */
+    border-color: var(--or-vieilli); 
+    background-color: #fff; 
 }
 
-/* Cas particulier pour le message (Zone de texte) */
 textarea.formulaire-contact__champ {
-    min-height: 150px; /* Force une hauteur minimale confortable */
-    resize: vertical; /* Permet à l'utilisateur d'agrandir vers le bas seulement */
-    font-family: var(--font-corps); /* S'assure que la police reste la bonne */
+    min-height: 150px; 
+    resize: vertical; 
+    font-family: var(--font-corps);
 }
 
-/* Supprime l'ancienne règle #message avec le padding si elle existe encore */
 #message {
     padding-bottom: 0; 
 }
 
-/* Centrer le bouton d'envoi */
 .bouton--envoi {
-    align-self: center; /* Centre le bouton dans le flex vertical */
+    align-self: center;
     margin-top: var(--space-md);
     min-width: 200px;
 }
 
-/* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
     .formulaire-contact {
         padding: var(--space-lg);
         border-radius: 30px;
-        width: 100%; /* Prend toute la largeur sur mobile */
+        width: 100%; 
     }
 }
