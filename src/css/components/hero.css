@@ -55,7 +55,7 @@
 
 .banniere-accueil__titres {
     margin-bottom: var(--space-);
-    transform: translateY(-40px);
+    transform: translateY(-20px);
 }
 
 .banniere-accueil__titres h1 {
