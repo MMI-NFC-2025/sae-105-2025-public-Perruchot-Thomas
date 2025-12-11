@@ -54,7 +54,7 @@
 }
 
 .banniere-accueil__titres {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-);
     transform: translateY(-40px);
 }
 
@@ -62,9 +62,9 @@
     font-family: var(--font-titre);
     font-size: 70px;
     color: var(--beige-claire);
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-);
     line-height: 1;
-    letter-spacing: 2px;
+    letter-spacing: px;
 }
 
 .banniere-accueil__sous-titre--dore {
@@ -77,7 +77,7 @@
     color: var(--vert-sapin);
     padding: 8px 24px;
     border-radius: 30px;
-    
+    margin-bottom: var(--space-xl);
     text-transform: lowercase;
     letter-spacing: 1px;
     margin-bottom: var(--space-md);
@@ -94,6 +94,8 @@
     align-items: center;
     box-shadow: 0 10px 30px rgba(9, 82, 40, 0.4);
     margin-top: var(--space-md);
+    margin-bottom: var(--space-2xl) ;
+   
     position: relative;
     z-index: 6;
 }
@@ -137,4 +139,72 @@
     border-radius: 20px;
     margin-top: var(--space-md);
     margin-bottom: var(--space-lg);
+}
+
+.banniere-festival {
+    position: relative;
+    width: 100%;
+    /* Hauteur moins grande que l'accueil, mais impactante */
+    height: 60vh; 
+    min-height: 400px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    /* Annule le padding des sections classiques pour coller aux bords */
+    padding: 0 !important; 
+    margin-top: 0 !important;
+}
+
+.banniere-festival__image-fond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Petit filtre sombre pour que le texte ressorte bien */
+    filter: brightness(0.6); 
+}
+
+.banniere-festival__contenu {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--space-md);
+}
+
+.banniere-festival__titre {
+    font-family: var(--font-titre);
+    font-size: 70px; /* Même taille que l'accueil */
+    color: var(--beige-claire) !important; /* Force le blanc/beige */
+    margin: 0;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Ombre pour lisibilité */
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .banniere-festival {
+        height: 50vh; /* Un peu plus petit sur mobile */
+    }
+    
+    .banniere-festival__titre {
+        font-size: 40px;
+    }
+}
+
+/* Ajustement pour la section qui suit juste après le Hero */
+.section-esprit {
+    text-align: center;
+    margin-top: var(--space-xl);
+}
+
+.section-esprit__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: var(--space-lg);
 }
