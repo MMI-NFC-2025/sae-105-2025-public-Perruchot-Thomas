@@ -90,3 +90,9 @@ ul {
         font-size: 40px; /* Taille adaptée mobile (comme sur l'accueil) */
     }
 }
+
+/* Empêche le défilement de la page quand le menu est ouvert */
+.noscroll {
+    overflow: hidden;
+    height: 100vh; /* Force la hauteur écran */
+}

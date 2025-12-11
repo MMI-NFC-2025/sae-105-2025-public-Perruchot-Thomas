@@ -1,0 +1,79 @@
+/* =========================================
+   COMPONENT : FORMULAIRE CONTACT
+   ========================================= */
+
+/* Le conteneur du formulaire (Style "Carte") */
+.formulaire-contact {
+    background-color: var(--beige); /* Fond beige comme les cartes */
+    border-radius: 40px; /* Coins très arrondis */
+    padding: var(--space-xl); /* Espace intérieur */
+    max-width: 600px; /* Largeur max pour ne pas qu'il soit trop large */
+    margin: 0 auto; /* Centré horizontalement */
+    margin-bottom: var(--space-3xl);
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md); /* Espace entre les champs */
+}
+
+/* Les groupes (Label + Input) */
+.formulaire-contact__groupe {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Les étiquettes (Prénom, Nom...) */
+.formulaire-contact__etiquette {
+    font-family: var(--font-corps);
+    font-weight: 700;
+    color: var(--marron-fonce);
+    margin-bottom: 8px; /* Petit espace sous le texte */
+    margin-left: 10px; /* Aligné avec l'arrondi du champ */
+}
+
+/* Les champs de saisie (Input) */
+.formulaire-contact__champ {
+    width: 100%;
+    padding: 15px 20px;
+    
+    background-color: var(--beige-claire); /* Fond plus clair pour écrire */
+    border: 1px solid transparent; /* Pas de bordure visible par défaut */
+    border-radius: 30px; /* Champs très ronds (Pilule) */
+    
+    font-family: var(--font-corps);
+    color: var(--marron-fonce);
+    font-size: var(--text-base);
+    
+    transition: all 0.3s ease;
+}
+
+/* Effet quand on clique dans le champ */
+.formulaire-contact__champ:focus {
+    outline: none;
+    border-color: var(--or-vieilli); /* Bordure dorée au clic */
+    background-color: #fff; /* Devient blanc pur */
+}
+
+/* Cas particulier pour le message (plus haut) */
+/* Note: Si tu as gardé <input> comme demandé, on ne peut pas changer la hauteur facilement comme un <textarea>,
+   mais on peut tricher un peu avec le padding */
+#message {
+    padding-bottom: 50px; /* Donne l'impression d'un champ plus grand */
+}
+
+/* Centrer le bouton d'envoi */
+.bouton--envoi {
+    align-self: center; /* Centre le bouton dans le flex vertical */
+    margin-top: var(--space-md);
+    min-width: 200px;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    .formulaire-contact {
+        padding: var(--space-lg);
+        border-radius: 30px;
+        width: 100%; /* Prend toute la largeur sur mobile */
+    }
+}
