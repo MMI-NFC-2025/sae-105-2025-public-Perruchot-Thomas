@@ -1,9 +1,8 @@
-/* Menu Fullscreen */
 .menu {
     position: fixed;
     inset: 0;
-    background-color: var(--marron-fonce); /* Fond du menu ouvert */
-    z-index: 90; /* Sous le header mais sur le contenu */
+    background-color: var(--marron-fonce);
+    z-index: 90;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +15,6 @@
     transition: all 0.4s ease-in-out;
 }
 
-/* État caché */
 .menu[hidden] {
     opacity: 0;
     visibility: hidden;
@@ -24,59 +22,57 @@
     pointer-events: none;
 }
 
-.menu__list {
+.menu__liste {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
 }
 
-.menu__link {
+.menu__lien {
     font-family: var(--font-titre);
-    font-size: var(--gros-titre); /* 40px pour les liens du menu */
+    font-size: var(--gros-titre);
     color: var(--beige-claire);
     text-decoration: none;
 }
 
-.menu__link:hover,
-.menu__link[aria-current="page"] {
+.menu__lien:hover,
+.menu__lien[aria-current="page"] {
     color: var(--or-vieilli);
 }
 
-/* Bouton Burger */
-.header__menu-button {
+.en-tete__bouton-menu {
     width: 40px;
     height: 40px;
     background: transparent;
     border: none;
     cursor: pointer;
     position: relative;
-    z-index: 101; /* Toujours visible */
+    z-index: 101;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 6px;
 }
 
-.menu-button__bar {
+.bouton-menu__barre {
     width: 100%;
     height: 3px;
-    background-color: var(--marron-fonce); /* Couleur barre par défaut */
+    background-color: var(--marron-fonce);
     border-radius: var(--radius-sm);
     transition: all 0.3s ease;
 }
 
-/* Quand le menu est ouvert, les barres deviennent beiges et font une croix */
-.header__menu-button[aria-expanded="true"] .menu-button__bar {
+.en-tete__bouton-menu[aria-expanded="true"] .bouton-menu__barre {
     background-color: var(--beige-claire);
 }
 
-.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(1) {
+.en-tete__bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
-.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(2) {
+.en-tete__bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(2) {
     opacity: 0;
 }
-.header__menu-button[aria-expanded="true"] .menu-button__bar:nth-child(3) {
+.en-tete__bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
