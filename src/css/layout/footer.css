@@ -2,7 +2,6 @@ footer {
     background-color: var(--marron-fonce);
     color: var(--beige-claire);
     padding: var(--space-3xl) var(--space-xl);
-    margin-top: var(--space-4xl);
     text-align: left;
 }
 
