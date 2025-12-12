@@ -23,6 +23,22 @@ toggle.addEventListener('click', () => {
     }
 });
 
+/* MENU present sur toutes les pages :
+http://127.0.0.1:5500/index.html 
+http://127.0.0.1:5500/festival.html
+http://127.0.0.1:5500/programmation.html
+http://127.0.0.1:5500/scenes.html
+http://127.0.0.1:5500/Artistes.html
+http://127.0.0.1:5500/Artist1.html
+http://127.0.0.1:5500/Artist2.html
+http://127.0.0.1:5500/Artist3.html
+http://127.0.0.1:5500/Artist4.html
+http://127.0.0.1:5500/Infos.html
+http://127.0.0.1:5500/Contact.html
+http://127.0.0.1:5500/404.html
+*/
+
+
 
 
 /* On va chercher la boîte qui contient les cartes et les deux flèches */
@@ -60,6 +76,10 @@ if (carrousel && btnGauche && btnDroite) {
     });
 }
 
+/* CARROUSEL present uniquement sur la page :
+http://127.0.0.1:5500/index.html 
+/*
+
 
 
 
@@ -95,3 +115,17 @@ if (btnHaut) {
       });
     });
 }
+
+/* BOUTON RETOUR EN HAUT present sur toutes les pages (sauf 404) :
+http://127.0.0.1:5500/index.html 
+http://127.0.0.1:5500/festival.html
+http://127.0.0.1:5500/programmation.html
+http://127.0.0.1:5500/scenes.html
+http://127.0.0.1:5500/Artistes.html
+http://127.0.0.1:5500/Artist1.html
+http://127.0.0.1:5500/Artist2.html
+http://127.0.0.1:5500/Artist3.html
+http://127.0.0.1:5500/Artist4.html
+http://127.0.0.1:5500/Infos.html
+http://127.0.0.1:5500/Contact.html
+*/
