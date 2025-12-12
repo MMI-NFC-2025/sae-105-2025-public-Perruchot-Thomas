@@ -292,15 +292,6 @@
         margin: 0; 
     }
 
-    .bouton-carrousel svg {
-        width: 32px;
-        height: 32px;
-        min-width: 32px; 
-        min-height: 32px;
-        stroke-width: 3;
-        transition: transform 0.3s ease;
-    }
-    
     .bouton-carrousel {
         display: flex;
         align-items: center;
