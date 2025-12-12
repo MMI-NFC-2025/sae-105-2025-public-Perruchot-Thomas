@@ -12,3 +12,38 @@
 ## Sujet
 
 [https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862](https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862)
+
+MENU present sur toutes les pages :
+url :  /index.html
+       /festival.html
+       /programmation.html
+       /Artistes.html
+       /scenes.html
+       /Contact.html
+       /Infos.html
+       /Artist1.html
+       /Artist2.html
+       /Artist3.html
+       /Artist4.html
+       /404.html
+
+
+CARROUSEL présent uniquement sur la page :
+url : /index.html
+
+
+BOUTON RETOUR HAUT present sur toutes les pages:
+url :  /index.html
+       /festival.html
+       /programmation.html
+       /Artistes.html
+       /scenes.html
+       /Contact.html
+       /Infos.html
+       /Artist1.html
+       /Artist2.html
+       /Artist3.html
+       /Artist4.html
+       /404.html
+
+

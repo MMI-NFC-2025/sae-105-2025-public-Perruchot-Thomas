@@ -23,20 +23,6 @@ toggle.addEventListener('click', () => {
     }
 });
 
-/* MENU present sur toutes les pages :
-url :  /index.html
-       /festival.html
-       /programmation.html
-       /Artistes.html
-       /scenes.html
-       /Contact.html
-       /Infos.html
-       /Artist1.html
-       /Artist2.html
-       /Artist3.html
-       /Artist4.html
-       /404.html
-*/
 
 
 
@@ -76,12 +62,6 @@ if (carrousel && btnGauche && btnDroite) {
     });
 }
 
-/* CARROUSEL présent uniquement sur la page :
-url : /index.html
-*/
-
-
-
 
 /* On va chercher le bouton haut dans les pages html */
 const btnHaut = document.getElementById('btn-retour-haut');
@@ -116,18 +96,4 @@ if (btnHaut) {
     });
 }
 
-/* BOUTON RETOUR HAUT present sur toutes les pages:
-url :  /index.html
-       /festival.html
-       /programmation.html
-       /Artistes.html
-       /scenes.html
-       /Contact.html
-       /Infos.html
-       /Artist1.html
-       /Artist2.html
-       /Artist3.html
-       /Artist4.html
-       /404.html
-*/
 
