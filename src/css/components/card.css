@@ -278,26 +278,20 @@
     }
 }
 
-/* =========================================
-   BOUTONS CARROUSEL (Mobile)
-   ========================================= */
 
-/* Par défaut (Desktop), on cache les boutons car c'est une grille */
 .bouton-carrousel {
     display: none;
 }
 
 @media (max-width: 768px) {
     
-    /* Le conteneur parent pour positionner les flèches */
+    
     .conteneur-carrousel {
         position: relative;
         width: 100%;
-        /* On annule les marges latérales pour que les flèches soient au bord */
         margin: 0; 
     }
 
-    /* Style des boutons */
     .bouton-carrousel {
         display: flex;
         align-items: center;
@@ -305,32 +299,30 @@
         
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); /* Centrage vertical parfait */
-        z-index: 10; /* Au-dessus des cartes */
+        transform: translateY(-50%);
+        z-index: 10;
         
         width: 40px;
         height: 40px;
-        border-radius: 50%; /* Rond parfait */
+        border-radius: 50%;
         
-        background-color: var(--marron-fonce); /* Couleur de fond */
-        color: var(--beige-claire); /* Couleur de la flèche */
-        border: 2px solid var(--beige-claire); /* Petit contour pour ressortir */
-        box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Ombre pour le relief */
-        
+        background-color: var(--marron-fonce);
+        color: var(--beige-claire);
+        border: 2px solid var(--beige-claire);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
         cursor: pointer;
         transition: all 0.3s ease;
     }
 
     .bouton-carrousel:active {
-        transform: translateY(-50%) scale(0.9); /* Effet de clic */
+        transform: translateY(-50%) scale(0.9);
     }
 
-    /* Positionnement spécifique */
     .bouton-carrousel--gauche {
-        left: 5px; /* Collé à gauche */
+        left: 5px;
     }
 
     .bouton-carrousel--droite {
-        right: 5px; /* Collé à droite */
+        right: 5px;
     }
 }
