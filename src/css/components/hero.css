@@ -206,7 +206,7 @@
     color: var(--beige-claire); 
     padding: var(--space-xl) var(--space-md);
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .partenaires__titre {
