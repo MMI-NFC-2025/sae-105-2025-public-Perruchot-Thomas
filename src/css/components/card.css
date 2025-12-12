@@ -253,3 +253,84 @@
 .carte-tarif__bas .bouton {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    
+    .section-programmation__grille {
+        
+        display: flex;              
+        overflow-x: scroll;         
+        overflow-y: hidden;        
+        
+       
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory; 
+        
+        gap: var(--space-md);       
+        padding-bottom: 20px;       
+        grid-template-columns: none;
+    }
+
+    .section-programmation__grille > .carte {
+        flex: 0 0 85%; 
+        scroll-snap-align: center;
+        margin: 0;
+    }
+}
+
+/* =========================================
+   BOUTONS CARROUSEL (Mobile)
+   ========================================= */
+
+/* Par défaut (Desktop), on cache les boutons car c'est une grille */
+.bouton-carrousel {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    /* Le conteneur parent pour positionner les flèches */
+    .conteneur-carrousel {
+        position: relative;
+        width: 100%;
+        /* On annule les marges latérales pour que les flèches soient au bord */
+        margin: 0; 
+    }
+
+    /* Style des boutons */
+    .bouton-carrousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Centrage vertical parfait */
+        z-index: 10; /* Au-dessus des cartes */
+        
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* Rond parfait */
+        
+        background-color: var(--marron-fonce); /* Couleur de fond */
+        color: var(--beige-claire); /* Couleur de la flèche */
+        border: 2px solid var(--beige-claire); /* Petit contour pour ressortir */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Ombre pour le relief */
+        
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .bouton-carrousel:active {
+        transform: translateY(-50%) scale(0.9); /* Effet de clic */
+    }
+
+    /* Positionnement spécifique */
+    .bouton-carrousel--gauche {
+        left: 5px; /* Collé à gauche */
+    }
+
+    .bouton-carrousel--droite {
+        right: 5px; /* Collé à droite */
+    }
+}

@@ -62,7 +62,7 @@
     font-family: var(--font-titre);
     font-size: 70px;
     color: var(--beige-claire);
-    margin-bottom: var(--space-);
+    margin-bottom: var(--space-md);
     line-height: 1;
     letter-spacing: px;
 }
