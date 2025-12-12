@@ -295,17 +295,16 @@
     .bouton-carrousel {
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;   
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 10;
-        
+        z-index: 10; 
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        
+        min-width: 32px; 
+        min-height: 32px; 
         background-color: var(--marron-fonce);
         color: var(--beige-claire);
         border: 2px solid var(--beige-claire);
