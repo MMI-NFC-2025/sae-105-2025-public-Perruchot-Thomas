@@ -64,10 +64,22 @@
         <h1 class="section-erreur__titre">404</h1>
         <h2 class="section-erreur__sous-titre">Oups !</h2>
         <p class="section-erreur__texte">
-            La page que vous recherchez semble avoir disparu >_<.
+            La page que vous recherchez semble avoir disparu dans les coulisses du théâtre.
         </p>
+
+        <form action="https://duckduckgo.com/" method="GET" class="barre-recherche" onsubmit="this.q.value = this.q.value + ' site:festicloze.fr'">
+            <label for="q" class="texte-invisible">Texte à chercher</label>
+            <input 
+                type="text" 
+                id="q" 
+                name="q" 
+                class="barre-recherche__champ" 
+                placeholder="erreur 404" 
+                required />
+            <button type="submit" class="bouton bouton--primaire">Rechercher</button>
+        </form>
+        <a href="index.html" class="bouton bouton--retour">Retour à l'accueil</a>
         <br>
-        <a href="index.html" class="bouton bouton--primaire">Retour à l'accueil</a>
       </section>
     </main>
     

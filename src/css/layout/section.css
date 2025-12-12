@@ -92,3 +92,51 @@ main > section:first-child:not(.banniere-accueil) {
     text-align: center;
     margin-top: var(--space-xl);
 }
+
+.section-erreur {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;   
+    text-align: center;     
+    padding-top: 180px; 
+    padding-bottom: 100px;
+    min-height: 60vh;
+}
+
+.barre-recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm); 
+    margin-bottom: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.barre-recherche__champ {
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 2px solid var(--marron-fonce); 
+    background-color: white; 
+    font-family: var(--font-corps);
+    color: var(--marron-fonce);
+    font-size: var(--text-base); 
+    width: 300px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.barre-recherche__champ:focus {
+    outline: none;
+    border-color: var(--rouge-accent);
+    background-color: #fff;
+}
+
+.bouton--retour {
+    background-color: var(--marron-fonce);
+    margin-top: var(--space-md);
+}
+
+.bouton--retour:hover {
+    background-color: var(--vert-sapin);
+}
