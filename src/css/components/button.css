@@ -31,21 +31,23 @@ button[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
+
+
 .bouton-haut {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 1000; 
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: var(--rouge-accent);
-    color: var(--beige-claire);
+    background-color: transparent; 
     border: none;
-    font-size: 24px;
-    font-weight: bold;
+    box-shadow: none;
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding: 0;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
@@ -59,6 +61,13 @@ button[type="submit"]:hover {
 }
 
 .bouton-haut:hover {
-    background-color: var(--marron-fonce);
+    background-color: transparent; 
     transform: translateY(-5px);
+}
+
+.bouton-haut__icone {
+    width: 40px;
+    height: 40px;
+    display: block;
+    filter: brightness(0) invert(1);
 }
