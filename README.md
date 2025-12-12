@@ -6,7 +6,7 @@
 - NOM : Perruchot
 - PRÉNOM : Thomas
 - GROUPE : B1
-- URL du site : http://127.0.0.1:5500
+- URL du site : https://festicloze.netlify.app
 - URL FIGMA : https://www.figma.com/design/NUqOa6iqgLVWhO1JLJrTMc/Maquette-2-SAE-103?node-id=1-2&t=iUqRaLIzOxjKsw7g-1
 
 ## Sujet
